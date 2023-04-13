@@ -1,4 +1,4 @@
-title "swnc: e theory=pspw xc=pbe formula=H130O65Lu1 charge=0 mult=2"
+title "swnc: e theory=pspw xc=pbe formula=H130O65lu1 charge=0 mult=3"
 #machinejob:expert
 
 permanent_dir ./perm
