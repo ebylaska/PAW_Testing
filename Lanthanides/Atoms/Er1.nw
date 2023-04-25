@@ -1,0 +1,74 @@
+title "swnc: e theory=pspw xc=pbe formula=H130O65er1 charge=0 mult=3"
+#machinejob:expert
+
+permanent_dir ./perm
+scratch_dir   ./perm
+
+echo
+
+start pspw-pbe-Er1
+
+memory 2300 mb
+
+charge 0
+
+geometry
+Er 0.0 0.0 0.0
+end
+
+
+nwpw
+  simulation_cell
+     SC 26.0
+     #boundary_conditions aperiodic
+  end
+
+  ### pseudopotential block begin ###
+  pseudopotentials
+    Er library paw_default
+  end
+  ### pseudopotential block end   ###
+  2d-hcurve
+  time_step 1.0
+  cutoff 60.0
+  lmbfgs
+
+  mult 3
+  xc pbe96
+
+end
+set nwpw:kbpp_ray    .true.
+set nwpw:kbpp_filter .true.
+#set nwpw:gram-schmidt .true.
+set nwpw:cif_filename Er1
+
+#task pspw steepest_descent
+task pspw energy ignore
+
+nwpw
+   dplot 
+       orbital  1 er1-orb01.cube
+       orbital  2 er1-orb02.cube
+       orbital  3 er1-orb03.cube
+       orbital  4 er1-orb04.cube
+       orbital  5 er1-orb05.cube
+       orbital  6 er1-orb06.cube
+       orbital  7 er1-orb07.cube
+       orbital  8 er1-orb08.cube
+       orbital  9 er1-orb09.cube
+       orbital 10 er1-orb10.cube
+       orbital 11 er1-orb11.cube
+       orbital 12 er1-orb12.cube
+       orbital 13 er1-orb13.cube
+       orbital 14 er1-orb14.cube
+       orbital 15 er1-orb15.cube
+       orbital 16 er1-orb16.cube
+       orbital 17 er1-orb17.cube
+       orbital 18 er1-orb18.cube
+       orbital 19 er1-orb19.cube
+       orbital 20 er1-orb20.cube
+       orbital 21 er1-orb21.cube
+       orbital 22 er1-orb22.cube
+    end
+end
+task pspw pspw_dplot

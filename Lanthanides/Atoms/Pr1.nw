@@ -1,0 +1,65 @@
+title "swnc: e theory=pspw xc=pbe formula=H130O65pr1 charge=0 mult=3"
+#machinejob:expert
+
+permanent_dir ./perm
+scratch_dir   ./perm
+
+echo
+
+start pspw-pbe-Pr1
+
+memory 2300 mb
+
+charge 0
+
+geometry
+Pr 0.0 0.0 0.0
+end
+
+
+nwpw
+  simulation_cell
+     SC 26.0
+     #boundary_conditions aperiodic
+  end
+
+  ### pseudopotential block begin ###
+  pseudopotentials
+    Pr library paw_default
+  end
+  ### pseudopotential block end   ###
+  2d-hcurve
+  time_step 1.0
+  cutoff 60.0
+  lmbfgs
+
+  mult 4
+  xc pbe96
+
+end
+set nwpw:kbpp_ray    .true.
+set nwpw:kbpp_filter .true.
+#set nwpw:gram-schmidt .true.
+set nwpw:cif_filename Pr1
+
+#task pspw steepest_descent
+task pspw energy ignore
+
+nwpw
+   dplot 
+       orbital  1 pr1-orb01.cube
+       orbital  2 pr1-orb02.cube
+       orbital  3 pr1-orb03.cube
+       orbital  4 pr1-orb04.cube
+       orbital  5 pr1-orb05.cube
+       orbital  6 pr1-orb06.cube
+       orbital  7 pr1-orb07.cube
+       orbital  8 pr1-orb08.cube
+       orbital  9 pr1-orb09.cube
+       orbital 10 pr1-orb10.cube
+       orbital 11 pr1-orb11.cube
+       orbital 12 pr1-orb12.cube
+       orbital 13 pr1-orb13.cube
+    end
+end
+task pspw pspw_dplot
