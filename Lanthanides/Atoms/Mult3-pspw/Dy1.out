@@ -1,0 +1,1572 @@
+ argument  1 = Dy1.nw
+
+
+
+============================== echo of input deck ==============================
+title "swnc: e theory=pspw xc=pbe formula=H130O65dy1 charge=0 mult=3"
+#machinejob:expert
+
+permanent_dir ./perm
+scratch_dir   ./perm
+
+echo
+
+start pspw-pbe-Dy1
+
+memory 2300 mb
+
+charge 0
+
+geometry
+Dy 0.0 0.0 0.0
+end
+
+
+nwpw
+  simulation_cell
+     SC 26.0
+     #boundary_conditions aperiodic
+  end
+
+  ### pseudopotential block begin ###
+  ### pseudopotential block end   ###
+  2d-hcurve
+  time_step 1.0
+  cutoff 70.0
+  lmbfgs
+
+  mult 3
+  xc pbe96
+
+end
+set nwpw:kbpp_ray    .true.
+set nwpw:kbpp_filter .true.
+#set nwpw:gram-schmidt .true.
+set nwpw:cif_filename Dy1
+
+#task pspw steepest_descent
+task pspw energy ignore
+
+================================================================================
+
+
+                                         
+                                         
+
+
+             Northwest Computational Chemistry Package (NWChem) 7.2.0
+             --------------------------------------------------------
+
+
+                    Environmental Molecular Sciences Laboratory
+                       Pacific Northwest National Laboratory
+                                Richland, WA 99352
+
+                              Copyright (c) 1994-2022
+                       Pacific Northwest National Laboratory
+                            Battelle Memorial Institute
+
+             NWChem is an open-source computational chemistry package
+                        distributed under the terms of the
+                      Educational Community License (ECL) 2.0
+             A copy of the license is included with this distribution
+                              in the LICENSE.TXT file
+
+                                  ACKNOWLEDGMENT
+                                  --------------
+
+            This software and its documentation were developed at the
+            EMSL at Pacific Northwest National Laboratory, a multiprogram
+            national laboratory, operated for the U.S. Department of Energy
+            by Battelle under Contract Number DE-AC05-76RL01830. Support
+            for this work was provided by the Department of Energy Office
+            of Biological and Environmental Research, Office of Basic
+            Energy Sciences, and the Office of Advanced Scientific Computing.
+
+
+           Job information
+           ---------------
+
+    hostname        = Erics-MacBook-Pro.local
+    program         = nwchem
+    date            = Fri Apr 21 16:13:54 2023
+
+    compiled        = Mon_Mar_27_19:09:42_2023
+    source          = /Users/bylaska/nwchem-releases/nwchem
+    nwchem branch   = 7.2.0
+    nwchem revision = v7.2.0-beta1-380-gdf1eef5276
+    ga revision     = 5.8.0
+    use scalapack   = F
+    input           = Dy1.nw
+    prefix          = pspw-pbe-Dy1.
+    data base       = ./perm/pspw-pbe-Dy1.db
+    status          = startup
+    nproc           =        6
+    time left       =     -1s
+
+
+
+           Memory information
+           ------------------
+
+    heap     =   75366396 doubles =    575.0 Mbytes
+    stack    =   75366401 doubles =    575.0 Mbytes
+    global   =  150732800 doubles =   1150.0 Mbytes (distinct from heap & stack)
+    total    =  301465597 doubles =   2300.0 Mbytes
+    verify   = yes
+    hardfail = no 
+
+
+           Directory information
+           ---------------------
+
+  0 permanent = ./perm
+  0 scratch   = ./perm
+
+
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+           swnc: e theory=pspw xc=pbe formula=H130O65dy1 charge=0 mult=3
+           -------------------------------------------------------------
+
+ Scaling coordinates for geometry "geometry" by  1.889725989
+ (inverse scale =  0.529177249)
+
+
+
+                             Geometry "geometry" -> ""
+                             -------------------------
+
+ Output coordinates in angstroms (scale by  1.889725989 to convert to a.u.)
+
+  No.       Tag          Charge          X              Y              Z
+ ---- ---------------- ---------- -------------- -------------- --------------
+    1 Dy                  66.0000     0.00000000     0.00000000     0.00000000
+
+      Atomic Mass 
+      ----------- 
+
+      Dy               163.928800
+
+
+ Effective nuclear repulsion energy (a.u.)       0.0000000000
+
+            Nuclear Dipole moment (a.u.) 
+            ----------------------------
+        X                 Y               Z
+ ---------------- ---------------- ----------------
+     0.0000000000     0.0000000000     0.0000000000
+
+
+            XYZ format geometry
+            -------------------
+     1
+ geometry
+ Dy                    0.00000000     0.00000000     0.00000000
+
+          ****************************************************
+          *                                                  *
+          *               NWPW PSPW Calculation              *
+          *                                                  *
+          * [ (Grassmann/Stiefel manifold implementation)  ] *
+          *                                                  *
+          *      [ NorthWest Chemistry implementation ]      *
+          *                                                  *
+          *            version #5.10   06/12/02              *
+          *                                                  *
+          *    This code was developed by Eric J. Bylaska,   *
+          *    and was based upon algorithms and code        *
+          *    developed by the group of Prof. John H. Weare *
+          *                                                  *
+          ****************************************************
+     >>>  JOB STARTED       AT Fri Apr 21 16:13:54 2023  <<<
+          ================ input data ========================
+  library name resolved from: compiled reference
+  NWCHEM_NWPW_LIBRARY set to: </Users/bylaska/nwchem-releases/nwchem/src/nwpw/libraryps/>
+ Generating 1d pseudopotential for Dy  
+
+ Generated formatted_filename: ./perm/Dy.vpp
+ - filtering pseudopotential -
+ random planewave guess, initial psi:pspw-pbe-Dy1.movecs                               
+ -   spin, nalpha, nbeta:                    2                   11                    9
+
+ input psi filename:./perm/pspw-pbe-Dy1.movecs
+
+ Warning - K.S. orbitals are not orthonormal. Applying Gram-Schmidt orthonormalization.
+         - exact norm=0.200000E+02 norm=0.131215E+02 corrected norm=0.200000E+02 (error=0.687854E+01)
+
+
+ number of processors used:         6
+ processor grid           :   6 x   1
+ parallel mapping         : 2d-hcurve
+ parallel mapping         :  balanced
+ number of threads        :         1
+ parallel io              :       off
+
+ options:
+      boundary conditions  = periodic    (version3)
+      electron spin        = unrestricted
+      exchange-correlation = PBE96 (White and Bird) parameterization
+
+ elements involved in the cluster:
+      1: Dy  valence charge: 20.0000  lmax=  3
+             comment    : Parameterized Dy TM psp (4f5s5p5d6s6p projectors, 4/2/2022 by EJB)
+             pseudpotential type            :   0
+             highest angular component      :   3
+             local potential used           :   0
+             number of non-local projections:  25
+             semicore corrections included  :  0.900 (radius)  8.283 (charge)
+             cutoff =   1.618   1.828   4.213   1.403
+
+
+ total charge:   0.000
+
+ atomic composition:
+     Dy  :    1
+
+ number of electrons: spin up=    11 (  11 per task)  down=     9 (   9 per task) (Fourier space)
+ number of orbitals : spin up=    11 (  11 per task)  down=     9 (   9 per task) (Fourier space)
+
+ supercell:
+      cell_name:  cell_default                                      
+      lattice:    a1=<  26.000   0.000   0.000 >
+                  a2=<   0.000  26.000   0.000 >
+                  a3=<   0.000   0.000  26.000 >
+      reciprocal: b1=<   0.242   0.000   0.000 >
+                  b2=<   0.000   0.242   0.000 >
+                  b3=<   0.000   0.000   0.242 >
+      lattice:    a=      26.000 b=     26.000 c=      26.000
+                  alpha=  90.000 beta=  90.000 gamma=  90.000
+                  omega=     17576.0
+
+      density cutoff= 35.000  fft= 70x 70x 70(    86963 waves    14493 per task)
+      wavefnc cutoff= 17.500  fft= 70x 70x 70(    30723 waves     5120 per task)
+      Ewald summation: cut radius=    8.28  and  1
+                       Madelung Wigner-Seitz=    1.76011888 (alpha=    2.83729748 rs=16.12911276)
+
+ technical parameters:
+      time step=      1.00     fictitious mass=  400000.0
+      tolerance=0.100E-06 (energy)   0.100E-06 (density)
+      maximum iterations =      1000 (   10 inner    100 outer )
+
+
+
+
+
+== Energy Calculation ==
+
+
+          ============ Grassmann lmbfgs iteration ============
+     >>>  ITERATION STARTED AT Fri Apr 21 16:13:57 2023  <<<
+    iter.           Energy         DeltaE       DeltaRho 
+    ------------------------------------------------------
+     -  15 steepest descent iterations performed
+      10   -0.1317638168E+03   -0.35752E+01    0.83727E+01
+     -  10 steepest descent iterations performed
+      20   -0.1383361498E+03   -0.17734E+00    0.23444E+00
+     -  10 steepest descent iterations performed
+      30   -0.1391175600E+03   -0.22737E-01    0.29313E-01
+     -  10 steepest descent iterations performed
+      40   -0.1391836720E+03   -0.73170E-03    0.10297E-02
+      50   -0.1391877964E+03   -0.17461E-03    0.11400E-03
+      60   -0.1391891995E+03   -0.14459E-03    0.24566E-03
+      70   -0.1391911061E+03   -0.11794E-03    0.10931E-02
+      80   -0.1391915953E+03   -0.24506E-04    0.80931E-04
+      90   -0.1391917222E+03   -0.63226E-05    0.57644E-05
+     100   -0.1391917616E+03   -0.47087E-05    0.80056E-05
+     110   -0.1391918099E+03   -0.26029E-05    0.36169E-04
+     120   -0.1391918222E+03   -0.55620E-06    0.35007E-05
+     130   -0.1391918264E+03   -0.50382E-06    0.12381E-05
+     140   -0.1391918382E+03   -0.15356E-05    0.21566E-04
+     -  10 steepest descent iterations performed
+     150   -0.1391918463E+03   -0.58385E-06    0.31676E-06
+     160   -0.1391918502E+03   -0.33944E-06    0.72183E-06
+     170   -0.1391918563E+03   -0.94670E-06    0.70233E-05
+     -  10 steepest descent iterations performed
+     180   -0.1391918607E+03   -0.32369E-06    0.16506E-06
+     190   -0.1391918642E+03   -0.46053E-06    0.14741E-05
+     -  10 steepest descent iterations performed
+     200   -0.1391918666E+03   -0.23702E-06    0.18208E-06
+     210   -0.1391918709E+03   -0.42087E-06    0.35894E-05
+     -  10 steepest descent iterations performed
+     220   -0.1391918746E+03   -0.35451E-06    0.22378E-06
+     230   -0.1391918774E+03   -0.27583E-06    0.10489E-05
+     240   -0.1391918882E+03   -0.13906E-05    0.33917E-04
+     -  10 steepest descent iterations performed
+     250   -0.1391918984E+03   -0.81527E-06    0.16487E-06
+     260   -0.1391919012E+03   -0.29678E-06    0.38473E-06
+     270   -0.1391919042E+03   -0.29258E-06    0.20785E-05
+     280   -0.1391919608E+03   -0.69291E-05    0.10865E-02
+     -  10 steepest descent iterations performed
+     290   -0.1391919937E+03   -0.13047E-05    0.22810E-06
+     300   -0.1391919961E+03   -0.19889E-06    0.10098E-06
+     310   -0.1391919977E+03   -0.12350E-06    0.53149E-06
+     320   -0.1391920004E+03   -0.20757E-06    0.38760E-05
+     -  10 steepest descent iterations performed
+     330   -0.1391920023E+03   -0.19347E-06    0.12112E-06
+     340   -0.1391920037E+03   -0.19842E-06    0.70597E-06
+     -  10 steepest descent iterations performed
+     350   -0.1391920038E+03   -0.88305E-07    0.33473E-10
+  *** tolerance ok. iteration terminated
+     >>>  ITERATION ENDED   AT Fri Apr 21 16:14:55 2023  <<<
+
+
+==  Summary Of Results  ==
+
+ number of electrons: spin up=   11.00000  down=    9.00000 (real space)
+
+ total     energy    :  -0.1391920038E+03 (   -0.13919E+03/ion)
+ total orbital energy:  -0.2579428071E+02 (   -0.12897E+01/electron)
+ hartree   energy    :   0.8581999487E+02 (    0.42910E+01/electron)
+ exc-corr  energy    :  -0.2215251363E+02 (   -0.11076E+01/electron)
+ ion-ion   energy    :  -0.2182536523E+02 (   -0.21825E+02/ion)
+
+ kinetic (planewave) :   0.3123381282E+02 (    0.15617E+01/electron)
+ V_local (planewave) :  -0.2141556114E+03 (   -0.10708E+02/electron)
+ V_nl    (planewave) :   0.1887678674E+01 (    0.94384E-01/electron)
+ V_Coul  (planewave) :   0.1716399897E+03 (    0.85820E+01/electron)
+ V_xc.   (planewave) :  -0.1640015059E+02 (   -0.82001E+00/electron)
+ Virial Coefficient  :  -0.1825844762E+01
+
+ orbital energies:
+    -0.1360866E+00 (  -3.703eV)
+    -0.3943068E+00 ( -10.730eV)
+    -0.3944896E+00 ( -10.735eV)    -0.3803359E+00 ( -10.350eV)
+    -0.4019294E+00 ( -10.937eV)    -0.3805152E+00 ( -10.354eV)
+    -0.4020377E+00 ( -10.940eV)    -0.3816499E+00 ( -10.385eV)
+    -0.4312440E+00 ( -11.735eV)    -0.3818648E+00 ( -10.391eV)
+    -0.5040577E+00 ( -13.716eV)    -0.4758136E+00 ( -12.948eV)
+    -0.2318528E+01 ( -63.091eV)    -0.2309503E+01 ( -62.845eV)
+    -0.2318716E+01 ( -63.096eV)    -0.2309584E+01 ( -62.847eV)
+    -0.2344581E+01 ( -63.800eV)    -0.2313411E+01 ( -62.952eV)
+    -0.3614115E+01 ( -98.346eV)    -0.3601513E+01 ( -98.003eV)
+
+ Total PSPW energy     :  -0.1391920038E+03
+
+
+=== Spin Contamination ===
+
+ <Sexact^2> =    2.0000000000000000     
+ <S^2>      =    2.0010851981618423     
+
+
+
+== Center of Charge ==
+
+spin up     (    0.0005,    0.0001,   -0.0004 )
+spin down   (   -0.0000,   -0.0000,    0.0000 )
+     total  (    0.0003,    0.0001,   -0.0002 )
+ionic       (    0.0000,    0.0000,    0.0000 )
+
+
+== Molecular Dipole wrt Center of Mass ==
+
+mu   =  (   -0.0054,   -0.0015,    0.0043 ) au
+|mu| =     0.0070 au,       0.0179 Debye
+
+ output psi filename:./perm/pspw-pbe-Dy1.movecs
+
+ Writing Crystallographic Information File:./perm/Dy1.cif
+   - cell not shifted (nwpw:cif_shift_cell .false.)
+
+
+== Timing ==
+
+cputime in seconds
+  prologue    :   0.280674E+01
+  main loop   :   0.578681E+02
+  epilogue    :   0.100381E+00
+  total       :   0.607752E+02
+  cputime/step:   0.643694E-01       (     899 evalulations,     341 linesearches)
+
+
+Time spent doing                        total          step       percent
+  total time                 :   0.607776E+02  0.676057E-01       100.0 %
+  i/o time                   :   0.277195E+01  0.308337E-02         4.6 %
+  FFTs                       :   0.123662E+02  0.137555E-01        20.3 %
+  dot products               :   0.193101E+01  0.214795E-02         3.2 %
+  geodesic                   :   0.314417E+01  0.349740E-02         5.2 %
+  ffm_dgemm                  :   0.470758E+00  0.523646E-03         0.8 %
+  fmf_dgemm                  :   0.211477E+01  0.235236E-02         3.5 %
+  mmm_dgemm                  :   0.997283E-02  0.110932E-04         0.0 %
+  m_diagonalize              :   0.113057E-01  0.125758E-04         0.0 %
+  exchange correlation       :   0.227760E+02  0.253348E-01        37.5 %
+  local pseudopotentials     :   0.128000E-03  0.142380E-06         0.0 %
+  non-local pseudopotentials :   0.153233E+01  0.170448E-02         2.5 %
+  hartree potentials         :   0.688040E-01  0.765339E-04         0.1 %
+  ion-ion interaction        :   0.589600E-02  0.655840E-05         0.0 %
+  structure factors          :   0.170802E-01  0.189991E-04         0.0 %
+  phase factors              :   0.299900E-05  0.333593E-08         0.0 %
+  masking and packing        :   0.277890E+01  0.309110E-02         4.6 %
+  queue fft                  :   0.242604E+02  0.269860E-01        39.9 %
+  queue fft (serial)         :   0.137500E+02  0.152948E-01        22.6 %
+  queue fft (message passing):   0.101473E+02  0.112873E-01        16.7 %
+  non-local psp FFM          :   0.755111E+00  0.839945E-03         1.2 %
+  non-local psp FMF          :   0.640124E+00  0.712040E-03         1.1 %
+  non-local psp FFM A        :   0.140350E+00  0.156118E-03         0.2 %
+  non-local psp FFM B        :   0.559522E+00  0.622383E-03         0.9 %
+
+     >>>  JOB COMPLETED     AT Fri Apr 21 16:14:55 2023  <<<
+          ****************************************************
+          *                                                  *
+          *               NWPW PSPW Calculation              *
+          *                                                  *
+          * [ (Grassmann/Stiefel manifold implementation)  ] *
+          *                                                  *
+          *      [ NorthWest Chemistry implementation ]      *
+          *                                                  *
+          *            version #5.10   06/12/02              *
+          *                                                  *
+          *    This code was developed by Eric J. Bylaska,   *
+          *    and was based upon algorithms and code        *
+          *    developed by the group of Prof. John H. Weare *
+          *                                                  *
+          ****************************************************
+     >>>  JOB STARTED       AT Fri Apr 21 16:14:55 2023  <<<
+          ================ input data ========================
+ pseudopotential is not correctly formatted:Dy.vpp                                            
+
+ Generated formatted_filename: ./perm/Dy.vpp
+ - filtering pseudopotential -
+ Error reading psi - bad grid
+ nfft :                   70                   70                   70
+ ngrid:                  100                  100                  100
+ Error reading psi - bad grid
+ nfft :                   70                   70                   70
+ ngrid:                  100                  100                  100
+ Error reading psi - bad grid
+
+ Grid is being converted:
+ ------------------------
+
+ To turn off automatic grid conversion:
+
+ set nwpw:psi_nogrid .false.
+
+ old_filename: pspw-pbe-Dy1.movecs                               
+ new_filename: pspw-pbe-Dy1.movecs                               
+ converting  :  70x 70x 70 --> 100x100x100
+converting .... psi:    1 spin: 1
+converting .... psi:    2 spin: 1
+converting .... psi:    3 spin: 1
+converting .... psi:    4 spin: 1
+converting .... psi:    5 spin: 1
+converting .... psi:    6 spin: 1
+converting .... psi:    7 spin: 1
+converting .... psi:    8 spin: 1
+converting .... psi:    9 spin: 1
+converting .... psi:   10 spin: 1
+converting .... psi:   11 spin: 1
+converting .... psi:    1 spin: 2
+converting .... psi:    2 spin: 2
+converting .... psi:    3 spin: 2
+converting .... psi:    4 spin: 2
+converting .... psi:    5 spin: 2
+converting .... psi:    6 spin: 2
+converting .... psi:    7 spin: 2
+converting .... psi:    8 spin: 2
+converting .... psi:    9 spin: 2
+
+ input psi filename:./perm/pspw-pbe-Dy1.movecs
+
+ number of processors used:         6
+ processor grid           :   6 x   1
+ parallel mapping         : 2d-hcurve
+ parallel mapping         :  balanced
+ number of threads        :         1
+ parallel io              :       off
+
+ options:
+      boundary conditions  = periodic    (version3)
+      electron spin        = unrestricted
+      exchange-correlation = PBE96 (White and Bird) parameterization
+
+ elements involved in the cluster:
+      1: Dy  valence charge: 20.0000  lmax=  3
+             comment    : Parameterized Dy TM psp (4f5s5p5d6s6p projectors, 4/2/2022 by EJB)
+             pseudpotential type            :   0
+             highest angular component      :   3
+             local potential used           :   0
+             number of non-local projections:  25
+             semicore corrections included  :  0.900 (radius)  8.291 (charge)
+             cutoff =   1.618   1.828   4.213   1.403
+
+
+ total charge:   0.000
+
+ atomic composition:
+     Dy  :    1
+
+ number of electrons: spin up=    11 (  11 per task)  down=     9 (   9 per task) (Fourier space)
+ number of orbitals : spin up=    11 (  11 per task)  down=     9 (   9 per task) (Fourier space)
+
+ supercell:
+      cell_name:  cell_default                                      
+      lattice:    a1=<  26.000   0.000   0.000 >
+                  a2=<   0.000  26.000   0.000 >
+                  a3=<   0.000   0.000  26.000 >
+      reciprocal: b1=<   0.242   0.000   0.000 >
+                  b2=<   0.000   0.242   0.000 >
+                  b3=<   0.000   0.000   0.242 >
+      lattice:    a=      26.000 b=     26.000 c=      26.000
+                  alpha=  90.000 beta=  90.000 gamma=  90.000
+                  omega=     17576.0
+
+      density cutoff= 70.000  fft=100x100x100(   245909 waves    40984 per task)
+      wavefnc cutoff= 35.000  fft=100x100x100(    86963 waves    14493 per task)
+      Ewald summation: cut radius=    8.28  and  1
+                       Madelung Wigner-Seitz=    1.76011888 (alpha=    2.83729748 rs=16.12911276)
+
+ technical parameters:
+      time step=      1.00     fictitious mass=  400000.0
+      tolerance=0.100E-06 (energy)   0.100E-06 (density)
+      maximum iterations =      1000 (   10 inner    100 outer )
+
+
+
+
+
+== Energy Calculation ==
+
+
+          ============ Grassmann lmbfgs iteration ============
+     >>>  ITERATION STARTED AT Fri Apr 21 16:14:59 2023  <<<
+    iter.           Energy         DeltaE       DeltaRho 
+    ------------------------------------------------------
+      10   -0.1391998805E+03   -0.43512E-02    0.18395E-02
+     -  10 steepest descent iterations performed
+      20   -0.1394713234E+03   -0.35695E-01    0.14669E+00
+     -  10 steepest descent iterations performed
+      30   -0.1395474110E+03   -0.38931E-03    0.40899E-02
+      40   -0.1395484608E+03   -0.37958E-04    0.64903E-04
+      50   -0.1395486961E+03   -0.83081E-05    0.47918E-04
+      60   -0.1395487469E+03   -0.59242E-05    0.52286E-04
+      70   -0.1395489745E+03   -0.51644E-04    0.38960E-02
+     -  10 steepest descent iterations performed
+      80   -0.1395491660E+03   -0.90512E-05    0.58230E-05
+      90   -0.1395494886E+03   -0.14915E-03    0.57854E-03
+     -  10 steepest descent iterations performed
+     100   -0.1395513932E+03   -0.38422E-03    0.77639E-04
+     -  10 steepest descent iterations performed
+     110   -0.1395568804E+03   -0.12221E-02    0.86060E-03
+     -  10 steepest descent iterations performed
+     120   -0.1395689672E+03   -0.10637E-02    0.97769E-03
+     130   -0.1395930425E+03   -0.83885E-03    0.16673E-01
+     140   -0.1395947707E+03   -0.97978E-04    0.28637E-03
+     150   -0.1395956776E+03   -0.98134E-04    0.10424E-02
+     -  10 steepest descent iterations performed
+     160   -0.1395962299E+03   -0.42279E-04    0.72428E-04
+     170   -0.1395968380E+03   -0.10347E-03    0.94007E-03
+     -  10 steepest descent iterations performed
+     180   -0.1395972352E+03   -0.31783E-04    0.73446E-04
+     190   -0.1395975069E+03   -0.30934E-04    0.31626E-03
+     200   -0.1395983592E+03   -0.89408E-04    0.52377E-02
+     -  10 steepest descent iterations performed
+     210   -0.1395987779E+03   -0.37762E-04    0.78805E-04
+     220   -0.1395990171E+03   -0.33233E-04    0.16541E-03
+     230   -0.1395996657E+03   -0.73091E-04    0.25851E-02
+     -  10 steepest descent iterations performed
+     240   -0.1396001617E+03   -0.36835E-04    0.33553E-04
+     250   -0.1396003915E+03   -0.29700E-04    0.10240E-03
+     260   -0.1396007236E+03   -0.24959E-04    0.57346E-03
+     270   -0.1396015921E+03   -0.61216E-04    0.52643E-02
+     -  10 steepest descent iterations performed
+     280   -0.1396019556E+03   -0.24105E-04    0.69815E-04
+     290   -0.1396021021E+03   -0.98887E-05    0.90014E-04
+     300   -0.1396021894E+03   -0.10309E-04    0.10321E-03
+     -  10 steepest descent iterations performed
+     310   -0.1396022295E+03   -0.30513E-05    0.58906E-05
+     320   -0.1396022776E+03   -0.50558E-05    0.61518E-04
+     -  10 steepest descent iterations performed
+     330   -0.1396023073E+03   -0.30803E-05    0.54735E-05
+     340   -0.1396023377E+03   -0.34091E-05    0.34412E-04
+     -  10 steepest descent iterations performed
+     350   -0.1396023611E+03   -0.21456E-05    0.32990E-05
+     360   -0.1396023870E+03   -0.25956E-05    0.29139E-04
+     -  10 steepest descent iterations performed
+     370   -0.1396024084E+03   -0.22200E-05    0.36130E-05
+     380   -0.1396024299E+03   -0.24745E-05    0.23864E-04
+     -  10 steepest descent iterations performed
+     390   -0.1396024487E+03   -0.16641E-05    0.24723E-05
+     400   -0.1396024695E+03   -0.22097E-05    0.26290E-04
+     -  10 steepest descent iterations performed
+     410   -0.1396024885E+03   -0.19280E-05    0.33566E-05
+     420   -0.1396025075E+03   -0.22303E-05    0.25403E-04
+     -  10 steepest descent iterations performed
+     430   -0.1396025246E+03   -0.14437E-05    0.22185E-05
+     440   -0.1396025422E+03   -0.18760E-05    0.23199E-04
+     -  10 steepest descent iterations performed
+     450   -0.1396025583E+03   -0.16285E-05    0.28645E-05
+     460   -0.1396025752E+03   -0.20794E-05    0.25764E-04
+     -  10 steepest descent iterations performed
+     470   -0.1396025912E+03   -0.12974E-05    0.21039E-05
+     480   -0.1396026064E+03   -0.15905E-05    0.20898E-04
+     -  10 steepest descent iterations performed
+     490   -0.1396026202E+03   -0.13932E-05    0.24731E-05
+     500   -0.1396026345E+03   -0.17566E-05    0.21770E-04
+     -  10 steepest descent iterations performed
+     510   -0.1396026479E+03   -0.10743E-05    0.16089E-05
+     520   -0.1396026609E+03   -0.13990E-05    0.17382E-04
+     -  10 steepest descent iterations performed
+     530   -0.1396026733E+03   -0.12312E-05    0.20885E-05
+     540   -0.1396026860E+03   -0.15900E-05    0.18861E-04
+     -  10 steepest descent iterations performed
+     550   -0.1396026982E+03   -0.97189E-06    0.13985E-05
+     560   -0.1396027099E+03   -0.12493E-05    0.14910E-04
+     -  10 steepest descent iterations performed
+     570   -0.1396027211E+03   -0.11038E-05    0.17227E-05
+     580   -0.1396027322E+03   -0.13781E-05    0.14705E-04
+     -  10 steepest descent iterations performed
+     590   -0.1396027428E+03   -0.83906E-06    0.10749E-05
+     600   -0.1396027529E+03   -0.10716E-05    0.11070E-04
+     -  10 steepest descent iterations performed
+     610   -0.1396027625E+03   -0.95758E-06    0.13173E-05
+     620   -0.1396027723E+03   -0.12344E-05    0.11524E-04
+     -  10 steepest descent iterations performed
+     630   -0.1396027819E+03   -0.75237E-06    0.89579E-06
+     640   -0.1396027909E+03   -0.96501E-06    0.91483E-05
+     -  10 steepest descent iterations performed
+     650   -0.1396027997E+03   -0.86863E-06    0.11093E-05
+     660   -0.1396028085E+03   -0.10919E-05    0.92890E-05
+     -  10 steepest descent iterations performed
+     670   -0.1396028169E+03   -0.66734E-06    0.73492E-06
+     680   -0.1396028249E+03   -0.83980E-06    0.71698E-05
+     -  10 steepest descent iterations performed
+     690   -0.1396028327E+03   -0.76357E-06    0.88470E-06
+     700   -0.1396028404E+03   -0.96752E-06    0.74032E-05
+     -  10 steepest descent iterations performed
+     710   -0.1396028479E+03   -0.59163E-06    0.61008E-06
+     720   -0.1396028550E+03   -0.73572E-06    0.57983E-05
+     -  10 steepest descent iterations performed
+     730   -0.1396028618E+03   -0.67408E-06    0.73724E-06
+     740   -0.1396028686E+03   -0.84015E-06    0.60168E-05
+     -  10 steepest descent iterations performed
+     750   -0.1396028751E+03   -0.51357E-06    0.50604E-06
+     760   -0.1396028811E+03   -0.62350E-06    0.46253E-05
+     -  10 steepest descent iterations performed
+     770   -0.1396028870E+03   -0.57543E-06    0.59980E-06
+     780   -0.1396028927E+03   -0.71380E-06    0.48237E-05
+     -  10 steepest descent iterations performed
+     790   -0.1396028983E+03   -0.43643E-06    0.41677E-06
+     800   -0.1396029034E+03   -0.52932E-06    0.37823E-05
+     -  10 steepest descent iterations performed
+     810   -0.1396029084E+03   -0.49096E-06    0.50128E-06
+     820   -0.1396029133E+03   -0.60660E-06    0.40049E-05
+     -  10 steepest descent iterations performed
+     830   -0.1396029181E+03   -0.37074E-06    0.35079E-06
+     840   -0.1396029224E+03   -0.44310E-06    0.31035E-05
+     -  10 steepest descent iterations performed
+     850   -0.1396029266E+03   -0.41283E-06    0.41573E-06
+     860   -0.1396029307E+03   -0.50691E-06    0.32812E-05
+     -  10 steepest descent iterations performed
+     870   -0.1396029347E+03   -0.30962E-06    0.29236E-06
+     880   -0.1396029383E+03   -0.36811E-06    0.25532E-05
+     -  10 steepest descent iterations performed
+     890   -0.1396029418E+03   -0.34435E-06    0.34680E-06
+     900   -0.1396029452E+03   -0.42324E-06    0.27303E-05
+     -  10 steepest descent iterations performed
+     910   -0.1396029485E+03   -0.25840E-06    0.24597E-06
+     920   -0.1396029516E+03   -0.30650E-06    0.21321E-05
+     -  10 steepest descent iterations performed
+     930   -0.1396029545E+03   -0.28771E-06    0.29244E-06
+     940   -0.1396029574E+03   -0.35328E-06    0.22905E-05
+     -  10 steepest descent iterations performed
+     950   -0.1396029601E+03   -0.21552E-06    0.20708E-06
+     960   -0.1396029627E+03   -0.25346E-06    0.17676E-05
+     -  10 steepest descent iterations performed
+     970   -0.1396029651E+03   -0.23852E-06    0.24384E-06
+     980   -0.1396029675E+03   -0.29066E-06    0.18812E-05
+     -  10 steepest descent iterations performed
+     990   -0.1396029697E+03   -0.17721E-06    0.17123E-06
+    1000   -0.1396029718E+03   -0.20698E-06    0.14412E-05
+ *** arrived at the Maximum iteration.  terminated
+     >>>  ITERATION ENDED   AT Fri Apr 21 16:22:12 2023  <<<
+
+
+==  Summary Of Results  ==
+
+ number of electrons: spin up=   11.00000  down=    9.00000 (real space)
+
+ total     energy    :  -0.1396029718E+03 (   -0.13960E+03/ion)
+ total orbital energy:  -0.2183003053E+02 (   -0.10915E+01/electron)
+ hartree   energy    :   0.9031881191E+02 (    0.45159E+01/electron)
+ exc-corr  energy    :  -0.2287156335E+02 (   -0.11436E+01/electron)
+ ion-ion   energy    :  -0.2182536523E+02 (   -0.21825E+02/ion)
+
+ kinetic (planewave) :   0.4465151749E+02 (    0.22326E+01/electron)
+ V_local (planewave) :  -0.2209072229E+03 (   -0.11045E+02/electron)
+ V_nl    (planewave) :  -0.8969149752E+01 (   -0.44846E+00/electron)
+ V_Coul  (planewave) :   0.1806376238E+03 (    0.90319E+01/electron)
+ V_xc.   (planewave) :  -0.1724279921E+02 (   -0.86214E+00/electron)
+ Virial Coefficient  :  -0.1488897842E+01
+
+ orbital energies:
+    -0.2555723E+00 (  -6.955eV)
+    -0.2622829E+00 (  -7.137eV)
+    -0.2667108E+00 (  -7.258eV)    -0.2418690E+00 (  -6.582eV)
+    -0.2671024E+00 (  -7.268eV)    -0.2457774E+00 (  -6.688eV)
+    -0.2684819E+00 (  -7.306eV)    -0.2502503E+00 (  -6.810eV)
+    -0.2892285E+00 (  -7.870eV)    -0.2513206E+00 (  -6.839eV)
+    -0.3622450E+00 (  -9.857eV)    -0.3361053E+00 (  -9.146eV)
+    -0.2013792E+01 ( -54.799eV)    -0.1975719E+01 ( -53.762eV)
+    -0.2027347E+01 ( -55.167eV)    -0.1977061E+01 ( -53.799eV)
+    -0.2028207E+01 ( -55.191eV)    -0.2005701E+01 ( -54.578eV)
+    -0.3270048E+01 ( -88.983eV)    -0.3235209E+01 ( -88.035eV)
+
+ Total PSPW energy     :  -0.1396029718E+03
+
+
+=== Spin Contamination ===
+
+ <Sexact^2> =    2.0000000000000000     
+ <S^2>      =    3.8717728758355001     
+
+
+
+== Center of Charge ==
+
+spin up     (   -0.1136,    0.1360,   -0.0159 )
+spin down   (    0.1398,   -0.1673,    0.0196 )
+     total  (    0.0005,   -0.0005,    0.0001 )
+ionic       (    0.0000,    0.0000,    0.0000 )
+
+
+== Molecular Dipole wrt Center of Mass ==
+
+mu   =  (   -0.0092,    0.0102,   -0.0014 ) au
+|mu| =     0.0138 au,       0.0350 Debye
+
+ output psi filename:./perm/pspw-pbe-Dy1.movecs
+
+ Writing Crystallographic Information File:./perm/Dy1.cif
+   - cell not shifted (nwpw:cif_shift_cell .false.)
+
+
+== Timing ==
+
+cputime in seconds
+  prologue    :   0.410903E+01
+  main loop   :   0.432509E+03
+  epilogue    :   0.247441E+00
+  total       :   0.436866E+03
+  cputime/step:   0.162171E+00       (    2667 evalulations,    1000 linesearches)
+
+
+Time spent doing                        total          step       percent
+  total time                 :   0.436868E+03  0.163805E+00       100.0 %
+  i/o time                   :   0.397007E+01  0.148859E-02         0.9 %
+  FFTs                       :   0.831528E+02  0.311784E-01        19.0 %
+  dot products               :   0.132635E+02  0.497318E-02         3.0 %
+  geodesic                   :   0.225335E+02  0.844899E-02         5.2 %
+  ffm_dgemm                  :   0.418195E+01  0.156803E-02         1.0 %
+  fmf_dgemm                  :   0.175418E+02  0.657735E-02         4.0 %
+  mmm_dgemm                  :   0.379472E-01  0.142284E-04         0.0 %
+  m_diagonalize              :   0.333561E-01  0.125070E-04         0.0 %
+  exchange correlation       :   0.179790E+03  0.674126E-01        41.2 %
+  local pseudopotentials     :   0.328000E-03  0.122985E-06         0.0 %
+  non-local pseudopotentials :   0.129562E+02  0.485797E-02         3.0 %
+  hartree potentials         :   0.585697E+00  0.219609E-03         0.1 %
+  ion-ion interaction        :   0.448300E-01  0.168091E-04         0.0 %
+  structure factors          :   0.131468E+00  0.492942E-04         0.0 %
+  phase factors              :   0.299900E-05  0.112448E-08         0.0 %
+  masking and packing        :   0.223569E+02  0.838279E-02         5.1 %
+  queue fft                  :   0.165016E+03  0.618733E-01        37.8 %
+  queue fft (serial)         :   0.694216E+02  0.260299E-01        15.9 %
+  queue fft (message passing):   0.909274E+02  0.340935E-01        20.8 %
+  non-local psp FFM          :   0.657805E+01  0.246646E-02         1.5 %
+  non-local psp FMF          :   0.501046E+01  0.187869E-02         1.1 %
+  non-local psp FFM A        :   0.116750E+01  0.437757E-03         0.3 %
+  non-local psp FFM B        :   0.511248E+01  0.191694E-02         1.2 %
+
+     >>>  JOB COMPLETED     AT Fri Apr 21 16:22:12 2023  <<<
+          ****************************************************
+          *                                                  *
+          *               NWPW PSPW Calculation              *
+          *                                                  *
+          * [ (Grassmann/Stiefel manifold implementation)  ] *
+          *                                                  *
+          *      [ NorthWest Chemistry implementation ]      *
+          *                                                  *
+          *            version #5.10   06/12/02              *
+          *                                                  *
+          *    This code was developed by Eric J. Bylaska,   *
+          *    and was based upon algorithms and code        *
+          *    developed by the group of Prof. John H. Weare *
+          *                                                  *
+          ****************************************************
+     >>>  JOB STARTED       AT Fri Apr 21 16:22:12 2023  <<<
+          ================ input data ========================
+ pseudopotential is not correctly formatted:Dy.vpp                                            
+
+ Generated formatted_filename: ./perm/Dy.vpp
+ - filtering pseudopotential -
+ Error reading psi - bad grid
+ nfft :                  100                  100                  100
+ ngrid:                  126                  126                  126
+ Error reading psi - bad grid
+ nfft :                  100                  100                  100
+ ngrid:                  126                  126                  126
+ Error reading psi - bad grid
+
+ Grid is being converted:
+ ------------------------
+
+ To turn off automatic grid conversion:
+
+ set nwpw:psi_nogrid .false.
+
+ old_filename: pspw-pbe-Dy1.movecs                               
+ new_filename: pspw-pbe-Dy1.movecs                               
+ converting  : 100x100x100 --> 126x126x126
+converting .... psi:    1 spin: 1
+converting .... psi:    2 spin: 1
+converting .... psi:    3 spin: 1
+converting .... psi:    4 spin: 1
+converting .... psi:    5 spin: 1
+converting .... psi:    6 spin: 1
+converting .... psi:    7 spin: 1
+converting .... psi:    8 spin: 1
+converting .... psi:    9 spin: 1
+converting .... psi:   10 spin: 1
+converting .... psi:   11 spin: 1
+converting .... psi:    1 spin: 2
+converting .... psi:    2 spin: 2
+converting .... psi:    3 spin: 2
+converting .... psi:    4 spin: 2
+converting .... psi:    5 spin: 2
+converting .... psi:    6 spin: 2
+converting .... psi:    7 spin: 2
+converting .... psi:    8 spin: 2
+converting .... psi:    9 spin: 2
+
+ input psi filename:./perm/pspw-pbe-Dy1.movecs
+
+ number of processors used:         6
+ processor grid           :   6 x   1
+ parallel mapping         : 2d-hcurve
+ parallel mapping         :  balanced
+ number of threads        :         1
+ parallel io              :       off
+
+ options:
+      boundary conditions  = periodic    (version3)
+      electron spin        = unrestricted
+      exchange-correlation = PBE96 (White and Bird) parameterization
+
+ elements involved in the cluster:
+      1: Dy  valence charge: 20.0000  lmax=  3
+             comment    : Parameterized Dy TM psp (4f5s5p5d6s6p projectors, 4/2/2022 by EJB)
+             pseudpotential type            :   0
+             highest angular component      :   3
+             local potential used           :   0
+             number of non-local projections:  25
+             semicore corrections included  :  0.900 (radius)  8.292 (charge)
+             cutoff =   1.618   1.828   4.213   1.403
+
+
+ total charge:   0.000
+
+ atomic composition:
+     Dy  :    1
+
+ number of electrons: spin up=    11 (  11 per task)  down=     9 (   9 per task) (Fourier space)
+ number of orbitals : spin up=    11 (  11 per task)  down=     9 (   9 per task) (Fourier space)
+
+ supercell:
+      cell_name:  cell_default                                      
+      lattice:    a1=<  26.000   0.000   0.000 >
+                  a2=<   0.000  26.000   0.000 >
+                  a3=<   0.000   0.000  26.000 >
+      reciprocal: b1=<   0.242   0.000   0.000 >
+                  b2=<   0.000   0.242   0.000 >
+                  b3=<   0.000   0.000   0.242 >
+      lattice:    a=      26.000 b=     26.000 c=      26.000
+                  alpha=  90.000 beta=  90.000 gamma=  90.000
+                  omega=     17576.0
+
+      density cutoff=105.000  fft=126x126x126(   451466 waves    75246 per task)
+      wavefnc cutoff= 52.500  fft=126x126x126(   159625 waves    26604 per task)
+      Ewald summation: cut radius=    8.28  and  1
+                       Madelung Wigner-Seitz=    1.76011888 (alpha=    2.83729748 rs=16.12911276)
+
+ technical parameters:
+      time step=      1.00     fictitious mass=  400000.0
+      tolerance=0.100E-06 (energy)   0.100E-06 (density)
+      maximum iterations =      1000 (   10 inner    100 outer )
+
+
+
+
+
+== Energy Calculation ==
+
+
+          ============ Grassmann lmbfgs iteration ============
+     >>>  ITERATION STARTED AT Fri Apr 21 16:22:22 2023  <<<
+    iter.           Energy         DeltaE       DeltaRho 
+    ------------------------------------------------------
+      10   -0.1479349461E+03   -0.22007E+00    0.45187E+01
+     -  10 steepest descent iterations performed
+      20   -0.1484772978E+03   -0.33252E-01    0.39370E-01
+     -  10 steepest descent iterations performed
+      30   -0.1485867480E+03   -0.11182E-01    0.69800E-01
+     -  10 steepest descent iterations performed
+      40   -0.1486424198E+03   -0.49806E-02    0.23032E-01
+      50   -0.1487090912E+03   -0.24049E-02    0.15056E+00
+      60   -0.1487284760E+03   -0.20165E-02    0.50458E-01
+      70   -0.1487411399E+03   -0.82345E-03    0.34365E-01
+      80   -0.1487500910E+03   -0.93900E-03    0.75429E-02
+     -  10 steepest descent iterations performed
+      90   -0.1487568416E+03   -0.49977E-03    0.19018E-02
+     100   -0.1487611664E+03   -0.38429E-03    0.41358E-02
+     110   -0.1487638300E+03   -0.24748E-03    0.17019E-02
+     120   -0.1487666913E+03   -0.29250E-03    0.97091E-02
+     -  10 steepest descent iterations performed
+     130   -0.1487682412E+03   -0.15651E-03    0.35075E-03
+     140   -0.1487697864E+03   -0.18740E-03    0.15926E-02
+     -  10 steepest descent iterations performed
+     150   -0.1487708533E+03   -0.12628E-03    0.20695E-03
+     160   -0.1487725459E+03   -0.17140E-03    0.28320E-02
+     -  10 steepest descent iterations performed
+     170   -0.1487740545E+03   -0.13206E-03    0.22278E-03
+     180   -0.1487751719E+03   -0.13137E-03    0.95622E-03
+     190   -0.1487810160E+03   -0.39032E-03    0.30614E-01
+     -  10 steepest descent iterations performed
+     200   -0.1487848111E+03   -0.39022E-03    0.21826E-02
+     210   -0.1487869096E+03   -0.22021E-03    0.23433E-02
+     220   -0.1487894079E+03   -0.24111E-03    0.35432E-02
+     -  10 steepest descent iterations performed
+     230   -0.1487909363E+03   -0.13311E-03    0.23842E-03
+     240   -0.1487918117E+03   -0.68790E-04    0.57616E-03
+     250   -0.1487925334E+03   -0.42610E-04    0.84833E-03
+     260   -0.1487935540E+03   -0.70585E-04    0.34265E-02
+     -  10 steepest descent iterations performed
+     270   -0.1487938894E+03   -0.33288E-04    0.92213E-04
+     280   -0.1487941908E+03   -0.33824E-04    0.59865E-03
+     -  10 steepest descent iterations performed
+     290   -0.1487943563E+03   -0.14294E-04    0.58752E-04
+     300   -0.1487945575E+03   -0.21860E-04    0.67089E-03
+     -  10 steepest descent iterations performed
+     310   -0.1487947251E+03   -0.15520E-04    0.60090E-04
+     320   -0.1487948617E+03   -0.13275E-04    0.36792E-03
+     330   -0.1487954413E+03   -0.42953E-04    0.10474E-01
+     -  10 steepest descent iterations performed
+     340   -0.1487956870E+03   -0.21891E-04    0.94946E-04
+     350   -0.1487957581E+03   -0.62200E-05    0.49109E-04
+     360   -0.1487958435E+03   -0.89794E-05    0.23888E-03
+     -  10 steepest descent iterations performed
+     370   -0.1487959137E+03   -0.63337E-05    0.18706E-04
+     380   -0.1487959879E+03   -0.99784E-05    0.15611E-03
+     -  10 steepest descent iterations performed
+     390   -0.1487960493E+03   -0.65539E-05    0.17427E-04
+     400   -0.1487961408E+03   -0.92780E-05    0.27369E-03
+     -  10 steepest descent iterations performed
+     410   -0.1487962246E+03   -0.75443E-05    0.23809E-04
+     420   -0.1487963048E+03   -0.10445E-04    0.16614E-03
+     -  10 steepest descent iterations performed
+     430   -0.1487963780E+03   -0.75659E-05    0.24538E-04
+     440   -0.1487964799E+03   -0.10144E-04    0.32366E-03
+     -  10 steepest descent iterations performed
+     450   -0.1487965777E+03   -0.86745E-05    0.22907E-04
+     460   -0.1487966701E+03   -0.12301E-04    0.15927E-03
+     -  10 steepest descent iterations performed
+     470   -0.1487967585E+03   -0.89045E-05    0.28477E-04
+     480   -0.1487968833E+03   -0.12692E-04    0.38617E-03
+     -  10 steepest descent iterations performed
+     490   -0.1487970115E+03   -0.11232E-04    0.25132E-04
+     500   -0.1487971328E+03   -0.16828E-04    0.17673E-03
+     -  10 steepest descent iterations performed
+     510   -0.1487972567E+03   -0.12686E-04    0.40558E-04
+     520   -0.1487974373E+03   -0.17960E-04    0.56093E-03
+     -  10 steepest descent iterations performed
+     530   -0.1487976274E+03   -0.16463E-04    0.32998E-04
+     540   -0.1487977981E+03   -0.22768E-04    0.21649E-03
+     -  10 steepest descent iterations performed
+     550   -0.1487979639E+03   -0.15990E-04    0.48743E-04
+     560   -0.1487981539E+03   -0.15470E-04    0.46480E-03
+     570   -0.1487987494E+03   -0.19497E-04    0.40920E-02
+     -  10 steepest descent iterations performed
+     580   -0.1487989658E+03   -0.18886E-04    0.26134E-03
+     590   -0.1487989997E+03   -0.49236E-05    0.25336E-04
+     600   -0.1487990571E+03   -0.40591E-05    0.14055E-03
+     610   -0.1487991470E+03   -0.40669E-05    0.42039E-03
+     -  10 steepest descent iterations performed
+     620   -0.1487991781E+03   -0.50569E-05    0.25673E-04
+     -  10 steepest descent iterations performed
+     630   -0.1487991917E+03   -0.92318E-06    0.32242E-05
+     640   -0.1487992139E+03   -0.30706E-05    0.70995E-04
+     -  10 steepest descent iterations performed
+     650   -0.1487992260E+03   -0.79158E-06    0.12991E-05
+     660   -0.1487992339E+03   -0.10150E-05    0.11686E-04
+     -  10 steepest descent iterations performed
+     670   -0.1487992406E+03   -0.55339E-06    0.13752E-05
+     680   -0.1487992497E+03   -0.10707E-05    0.21453E-04
+     -  10 steepest descent iterations performed
+     690   -0.1487992579E+03   -0.62061E-06    0.10903E-05
+     700   -0.1487992634E+03   -0.58158E-06    0.73940E-05
+     710   -0.1487992979E+03   -0.29845E-05    0.50463E-03
+     -  10 steepest descent iterations performed
+     720   -0.1487993143E+03   -0.83838E-06    0.17791E-05
+     730   -0.1487993164E+03   -0.13660E-06    0.49586E-06
+     740   -0.1487993182E+03   -0.15800E-06    0.19015E-05
+     -  10 steepest descent iterations performed
+     750   -0.1487993197E+03   -0.14482E-06    0.32236E-06
+     760   -0.1487993211E+03   -0.22197E-06    0.18183E-05
+     -  10 steepest descent iterations performed
+     770   -0.1487993215E+03   -0.98764E-07    0.21267E-08
+  *** tolerance ok. iteration terminated
+     >>>  ITERATION ENDED   AT Fri Apr 21 16:35:15 2023  <<<
+
+
+==  Summary Of Results  ==
+
+ number of electrons: spin up=   11.00000  down=    9.00000 (real space)
+
+ total     energy    :  -0.1487993215E+03 (   -0.14880E+03/ion)
+ total orbital energy:  -0.1313902151E+02 (   -0.65695E+00/electron)
+ hartree   energy    :   0.1084122292E+03 (    0.54206E+01/electron)
+ exc-corr  energy    :  -0.2649256583E+02 (   -0.13246E+01/electron)
+ ion-ion   energy    :  -0.2182536523E+02 (   -0.21825E+02/ion)
+
+ kinetic (planewave) :   0.1281032068E+03 (    0.64052E+01/electron)
+ V_local (planewave) :  -0.2397084452E+03 (   -0.11985E+02/electron)
+ V_nl    (planewave) :  -0.9728838120E+02 (   -0.48644E+01/electron)
+ V_Coul  (planewave) :   0.2168244583E+03 (    0.10841E+02/electron)
+ V_xc.   (planewave) :  -0.2106986018E+02 (   -0.10535E+01/electron)
+ Virial Coefficient  :  -0.1102565906E+01
+
+ orbital energies:
+    -0.1595731E+00 (  -4.342eV)
+    -0.1673405E+00 (  -4.554eV)
+    -0.1895071E+00 (  -5.157eV)    -0.1107934E+00 (  -3.015eV)
+    -0.2210153E+00 (  -6.014eV)    -0.1363094E+00 (  -3.709eV)
+    -0.2313019E+00 (  -6.294eV)    -0.1375165E+00 (  -3.742eV)
+    -0.2525458E+00 (  -6.872eV)    -0.2053894E+00 (  -5.589eV)
+    -0.2699272E+00 (  -7.345eV)    -0.2068074E+00 (  -5.628eV)
+    -0.1126555E+01 ( -30.655eV)    -0.1090999E+01 ( -29.688eV)
+    -0.1145765E+01 ( -31.178eV)    -0.1099852E+01 ( -29.929eV)
+    -0.1153968E+01 ( -31.401eV)    -0.1110222E+01 ( -30.211eV)
+    -0.2092686E+01 ( -56.945eV)    -0.2030947E+01 ( -55.265eV)
+
+ Total PSPW energy     :  -0.1487993215E+03
+
+
+=== Spin Contamination ===
+
+ <Sexact^2> =    2.0000000000000000     
+ <S^2>      =    3.9976330399522082     
+
+
+
+== Center of Charge ==
+
+spin up     (   -0.0000,    0.0000,   -0.0000 )
+spin down   (    0.0000,   -0.0000,   -0.0000 )
+     total  (    0.0000,   -0.0000,   -0.0000 )
+ionic       (    0.0000,    0.0000,    0.0000 )
+
+
+== Molecular Dipole wrt Center of Mass ==
+
+mu   =  (   -0.0000,    0.0000,    0.0001 ) au
+|mu| =     0.0001 au,       0.0003 Debye
+
+ output psi filename:./perm/pspw-pbe-Dy1.movecs
+
+ Writing Crystallographic Information File:./perm/Dy1.cif
+   - cell not shifted (nwpw:cif_shift_cell .false.)
+
+
+== Timing ==
+
+cputime in seconds
+  prologue    :   0.972311E+01
+  main loop   :   0.772824E+03
+  epilogue    :   0.459610E+00
+  total       :   0.783007E+03
+  cputime/step:   0.384299E+00       (    2011 evalulations,     763 linesearches)
+
+
+Time spent doing                        total          step       percent
+  total time                 :   0.783009E+03  0.389363E+00       100.0 %
+  i/o time                   :   0.939015E+01  0.466939E-02         1.2 %
+  FFTs                       :   0.168978E+03  0.840271E-01        21.6 %
+  dot products               :   0.208885E+02  0.103871E-01         2.7 %
+  geodesic                   :   0.346881E+02  0.172492E-01         4.4 %
+  ffm_dgemm                  :   0.569615E+01  0.283249E-02         0.7 %
+  fmf_dgemm                  :   0.252432E+02  0.125526E-01         3.2 %
+  mmm_dgemm                  :   0.317614E-01  0.157939E-04         0.0 %
+  m_diagonalize              :   0.256073E-01  0.127336E-04         0.0 %
+  exchange correlation       :   0.313647E+03  0.155966E+00        40.1 %
+  local pseudopotentials     :   0.539000E-03  0.268026E-06         0.0 %
+  non-local pseudopotentials :   0.195928E+02  0.974280E-02         2.5 %
+  hartree potentials         :   0.801723E+00  0.398669E-03         0.1 %
+  ion-ion interaction        :   0.652210E-01  0.324321E-04         0.0 %
+  structure factors          :   0.174306E+00  0.866764E-04         0.0 %
+  phase factors              :   0.199900E-05  0.994033E-09         0.0 %
+  masking and packing        :   0.352968E+02  0.175519E-01         4.5 %
+  queue fft                  :   0.318995E+03  0.158625E+00        40.7 %
+  queue fft (serial)         :   0.161117E+03  0.801179E-01        20.6 %
+  queue fft (message passing):   0.150671E+03  0.749232E-01        19.2 %
+  non-local psp FFM          :   0.942218E+01  0.468532E-02         1.2 %
+  non-local psp FMF          :   0.832667E+01  0.414056E-02         1.1 %
+  non-local psp FFM A        :   0.160390E+01  0.797564E-03         0.2 %
+  non-local psp FFM B        :   0.744503E+01  0.370215E-02         1.0 %
+
+     >>>  JOB COMPLETED     AT Fri Apr 21 16:35:15 2023  <<<
+          ****************************************************
+          *                                                  *
+          *               NWPW PSPW Calculation              *
+          *                                                  *
+          * [ (Grassmann/Stiefel manifold implementation)  ] *
+          *                                                  *
+          *      [ NorthWest Chemistry implementation ]      *
+          *                                                  *
+          *            version #5.10   06/12/02              *
+          *                                                  *
+          *    This code was developed by Eric J. Bylaska,   *
+          *    and was based upon algorithms and code        *
+          *    developed by the group of Prof. John H. Weare *
+          *                                                  *
+          ****************************************************
+     >>>  JOB STARTED       AT Fri Apr 21 16:35:15 2023  <<<
+          ================ input data ========================
+ pseudopotential is not correctly formatted:Dy.vpp                                            
+
+ Generated formatted_filename: ./perm/Dy.vpp
+ - filtering pseudopotential -
+ Error reading psi - bad grid
+ nfft :                  126                  126                  126
+ ngrid:                  140                  140                  140
+ Error reading psi - bad grid
+ nfft :                  126                  126                  126
+ ngrid:                  140                  140                  140
+ Error reading psi - bad grid
+
+ Grid is being converted:
+ ------------------------
+
+ To turn off automatic grid conversion:
+
+ set nwpw:psi_nogrid .false.
+
+ old_filename: pspw-pbe-Dy1.movecs                               
+ new_filename: pspw-pbe-Dy1.movecs                               
+ converting  : 126x126x126 --> 140x140x140
+converting .... psi:    1 spin: 1
+converting .... psi:    2 spin: 1
+converting .... psi:    3 spin: 1
+converting .... psi:    4 spin: 1
+converting .... psi:    5 spin: 1
+converting .... psi:    6 spin: 1
+converting .... psi:    7 spin: 1
+converting .... psi:    8 spin: 1
+converting .... psi:    9 spin: 1
+converting .... psi:   10 spin: 1
+converting .... psi:   11 spin: 1
+converting .... psi:    1 spin: 2
+converting .... psi:    2 spin: 2
+converting .... psi:    3 spin: 2
+converting .... psi:    4 spin: 2
+converting .... psi:    5 spin: 2
+converting .... psi:    6 spin: 2
+converting .... psi:    7 spin: 2
+converting .... psi:    8 spin: 2
+converting .... psi:    9 spin: 2
+
+ input psi filename:./perm/pspw-pbe-Dy1.movecs
+
+ number of processors used:         6
+ processor grid           :   6 x   1
+ parallel mapping         : 2d-hcurve
+ parallel mapping         :  balanced
+ number of threads        :         1
+ parallel io              :       off
+
+ options:
+      boundary conditions  = periodic    (version3)
+      electron spin        = unrestricted
+      exchange-correlation = PBE96 (White and Bird) parameterization
+
+ elements involved in the cluster:
+      1: Dy  valence charge: 20.0000  lmax=  3
+             comment    : Parameterized Dy TM psp (4f5s5p5d6s6p projectors, 4/2/2022 by EJB)
+             pseudpotential type            :   0
+             highest angular component      :   3
+             local potential used           :   0
+             number of non-local projections:  25
+             semicore corrections included  :  0.900 (radius)  8.292 (charge)
+             cutoff =   1.618   1.828   4.213   1.403
+
+
+ total charge:   0.000
+
+ atomic composition:
+     Dy  :    1
+
+ number of electrons: spin up=    11 (  11 per task)  down=     9 (   9 per task) (Fourier space)
+ number of orbitals : spin up=    11 (  11 per task)  down=     9 (   9 per task) (Fourier space)
+
+ supercell:
+      cell_name:  cell_default                                      
+      lattice:    a1=<  26.000   0.000   0.000 >
+                  a2=<   0.000  26.000   0.000 >
+                  a3=<   0.000   0.000  26.000 >
+      reciprocal: b1=<   0.242   0.000   0.000 >
+                  b2=<   0.000   0.242   0.000 >
+                  b3=<   0.000   0.000   0.242 >
+      lattice:    a=      26.000 b=     26.000 c=      26.000
+                  alpha=  90.000 beta=  90.000 gamma=  90.000
+                  omega=     17576.0
+
+      density cutoff=140.000  fft=140x140x140(   695428 waves   115908 per task)
+      wavefnc cutoff= 70.000  fft=140x140x140(   245909 waves    40984 per task)
+      Ewald summation: cut radius=    8.28  and  1
+                       Madelung Wigner-Seitz=    1.76011888 (alpha=    2.83729748 rs=16.12911276)
+
+ technical parameters:
+      time step=      1.00     fictitious mass=  400000.0
+      tolerance=0.100E-06 (energy)   0.100E-06 (density)
+      maximum iterations =      1000 (   10 inner    100 outer )
+
+
+
+
+
+== Energy Calculation ==
+
+
+          ============ Grassmann lmbfgs iteration ============
+     >>>  ITERATION STARTED AT Fri Apr 21 16:35:30 2023  <<<
+    iter.           Energy         DeltaE       DeltaRho 
+    ------------------------------------------------------
+      10   -0.1524012351E+03   -0.25385E-02    0.32185E+00
+     -  10 steepest descent iterations performed
+      20   -0.1524072854E+03   -0.20088E-03    0.10931E-03
+      30   -0.1524079994E+03   -0.39298E-04    0.11035E-03
+      40   -0.1524082678E+03   -0.22701E-04    0.25676E-03
+      50   -0.1524085905E+03   -0.36708E-04    0.13835E-02
+     -  10 steepest descent iterations performed
+      60   -0.1524087942E+03   -0.16062E-04    0.35692E-04
+      70   -0.1524089399E+03   -0.13801E-04    0.19686E-03
+      80   -0.1524091481E+03   -0.30376E-04    0.11096E-02
+     -  10 steepest descent iterations performed
+      90   -0.1524092961E+03   -0.12072E-04    0.20250E-04
+     100   -0.1524093963E+03   -0.80969E-05    0.97768E-04
+     110   -0.1524095049E+03   -0.10948E-04    0.40381E-03
+     -  10 steepest descent iterations performed
+     120   -0.1524096012E+03   -0.78567E-05    0.16815E-04
+     130   -0.1524096915E+03   -0.11042E-04    0.14330E-03
+     -  10 steepest descent iterations performed
+     140   -0.1524097507E+03   -0.79200E-05    0.24498E-04
+     150   -0.1524098612E+03   -0.97122E-05    0.41898E-03
+     -  10 steepest descent iterations performed
+     160   -0.1524099510E+03   -0.90148E-05    0.18981E-04
+     170   -0.1524100234E+03   -0.73701E-05    0.11265E-03
+     180   -0.1524101993E+03   -0.14432E-04    0.14338E-02
+     -  10 steepest descent iterations performed
+     190   -0.1524103667E+03   -0.13672E-04    0.21667E-04
+     200   -0.1524104513E+03   -0.12008E-04    0.59869E-04
+     210   -0.1524106711E+03   -0.44046E-04    0.10473E-02
+     -  10 steepest descent iterations performed
+     220   -0.1524111948E+03   -0.67099E-04    0.23949E-04
+     -  10 steepest descent iterations performed
+     230   -0.1524117487E+03   -0.10335E-03    0.50518E-04
+     -  10 steepest descent iterations performed
+     240   -0.1524126848E+03   -0.13388E-03    0.47336E-04
+     -  10 steepest descent iterations performed
+     250   -0.1524142469E+03   -0.27008E-03    0.17118E-03
+     -  10 steepest descent iterations performed
+     260   -0.1524167220E+03   -0.31237E-03    0.22169E-03
+     -  10 steepest descent iterations performed
+     270   -0.1524201900E+03   -0.48994E-03    0.67182E-03
+     -  10 steepest descent iterations performed
+     280   -0.1524244898E+03   -0.43999E-03    0.63949E-03
+     290   -0.1524444479E+03   -0.29181E-03    0.38815E-01
+     300   -0.1524472109E+03   -0.61192E-03    0.27985E-02
+     -  10 steepest descent iterations performed
+     310   -0.1524489774E+03   -0.18428E-03    0.32276E-03
+     320   -0.1524516192E+03   -0.44200E-03    0.60557E-02
+     -  10 steepest descent iterations performed
+     330   -0.1524532326E+03   -0.10891E-03    0.15347E-03
+     340   -0.1524539653E+03   -0.75144E-04    0.70454E-03
+     350   -0.1524561838E+03   -0.19754E-03    0.15840E-01
+     -  10 steepest descent iterations performed
+     360   -0.1524571464E+03   -0.67753E-04    0.10293E-03
+     370   -0.1524574519E+03   -0.30475E-04    0.13762E-03
+     380   -0.1524577481E+03   -0.28094E-04    0.55088E-03
+     390   -0.1524582901E+03   -0.46662E-04    0.30660E-02
+     -  10 steepest descent iterations performed
+     400   -0.1524585172E+03   -0.21051E-04    0.32509E-04
+     410   -0.1524586735E+03   -0.14919E-04    0.73290E-04
+     420   -0.1524588129E+03   -0.15720E-04    0.11294E-03
+     -  10 steepest descent iterations performed
+     430   -0.1524589014E+03   -0.95234E-05    0.10021E-04
+     440   -0.1524590262E+03   -0.14879E-04    0.98756E-04
+     -  10 steepest descent iterations performed
+     450   -0.1524591041E+03   -0.91923E-05    0.14230E-04
+     460   -0.1524591983E+03   -0.88462E-05    0.10426E-03
+     470   -0.1524594012E+03   -0.18910E-04    0.63922E-03
+     -  10 steepest descent iterations performed
+     480   -0.1524595750E+03   -0.13811E-04    0.33296E-04
+     490   -0.1524596562E+03   -0.86384E-05    0.43573E-04
+     500   -0.1524597192E+03   -0.83351E-05    0.73048E-04
+     510   -0.1524602144E+03   -0.37046E-04    0.66091E-02
+     -  10 steepest descent iterations performed
+     520   -0.1524604931E+03   -0.11723E-04    0.25407E-04
+     530   -0.1524605917E+03   -0.12672E-04    0.70720E-04
+     -  10 steepest descent iterations performed
+     540   -0.1524606395E+03   -0.50114E-05    0.14815E-04
+     550   -0.1524607471E+03   -0.14644E-04    0.47027E-03
+     -  10 steepest descent iterations performed
+     560   -0.1524608386E+03   -0.65684E-05    0.10078E-04
+     570   -0.1524608843E+03   -0.53983E-05    0.54720E-04
+     580   -0.1524611423E+03   -0.24321E-04    0.37709E-02
+     -  10 steepest descent iterations performed
+     590   -0.1524613386E+03   -0.16084E-04    0.19080E-04
+     600   -0.1524613840E+03   -0.36993E-05    0.19531E-04
+     610   -0.1524614292E+03   -0.56203E-05    0.11123E-03
+     -  10 steepest descent iterations performed
+     620   -0.1524614664E+03   -0.32419E-05    0.62909E-05
+     630   -0.1524615050E+03   -0.47560E-05    0.75726E-04
+     -  10 steepest descent iterations performed
+     640   -0.1524615352E+03   -0.29996E-05    0.77913E-05
+     650   -0.1524615705E+03   -0.37671E-05    0.84123E-04
+     -  10 steepest descent iterations performed
+     660   -0.1524615999E+03   -0.27851E-05    0.52984E-05
+     670   -0.1524616285E+03   -0.33819E-05    0.53324E-04
+     -  10 steepest descent iterations performed
+     680   -0.1524616528E+03   -0.23708E-05    0.58622E-05
+     690   -0.1524616796E+03   -0.28550E-05    0.61651E-04
+     -  10 steepest descent iterations performed
+     700   -0.1524617029E+03   -0.21337E-05    0.38928E-05
+     710   -0.1524617249E+03   -0.26477E-05    0.41008E-04
+     -  10 steepest descent iterations performed
+     720   -0.1524617443E+03   -0.18496E-05    0.43757E-05
+     730   -0.1524617653E+03   -0.22561E-05    0.48133E-04
+     -  10 steepest descent iterations performed
+     740   -0.1524617841E+03   -0.17005E-05    0.30583E-05
+     750   -0.1524618015E+03   -0.21136E-05    0.32815E-04
+     -  10 steepest descent iterations performed
+     760   -0.1524618173E+03   -0.14984E-05    0.34600E-05
+     770   -0.1524618342E+03   -0.18148E-05    0.38662E-04
+     -  10 steepest descent iterations performed
+     780   -0.1524618498E+03   -0.14053E-05    0.25403E-05
+     790   -0.1524618640E+03   -0.17306E-05    0.27429E-04
+     -  10 steepest descent iterations performed
+     800   -0.1524618773E+03   -0.12659E-05    0.29003E-05
+     810   -0.1524618912E+03   -0.14721E-05    0.31544E-04
+     -  10 steepest descent iterations performed
+     820   -0.1524619041E+03   -0.11888E-05    0.21693E-05
+     830   -0.1524619160E+03   -0.14236E-05    0.23047E-04
+     -  10 steepest descent iterations performed
+     840   -0.1524619272E+03   -0.10835E-05    0.24597E-05
+     850   -0.1524619387E+03   -0.11941E-05    0.25640E-04
+     -  10 steepest descent iterations performed
+     860   -0.1524619496E+03   -0.10098E-05    0.18390E-05
+     870   -0.1524619592E+03   -0.11214E-05    0.18188E-04
+     -  10 steepest descent iterations performed
+     880   -0.1524619683E+03   -0.89075E-06    0.19692E-05
+     890   -0.1524619775E+03   -0.92981E-06    0.19484E-04
+     -  10 steepest descent iterations performed
+     900   -0.1524619861E+03   -0.82486E-06    0.14911E-05
+     910   -0.1524619939E+03   -0.89262E-06    0.14522E-04
+     -  10 steepest descent iterations performed
+     920   -0.1524620014E+03   -0.74237E-06    0.16244E-05
+     930   -0.1524620088E+03   -0.74652E-06    0.15473E-04
+     -  10 steepest descent iterations performed
+     940   -0.1524620160E+03   -0.69479E-06    0.12606E-05
+     950   -0.1524620224E+03   -0.72613E-06    0.11851E-04
+     -  10 steepest descent iterations performed
+     960   -0.1524620286E+03   -0.63118E-06    0.13844E-05
+     970   -0.1524620349E+03   -0.61644E-06    0.12754E-04
+     980   -0.1524621091E+03   -0.82827E-05    0.29565E-02
+     -  10 steepest descent iterations performed
+     990   -0.1524621486E+03   -0.24899E-05    0.15811E-05
+    1000   -0.1524621530E+03   -0.21152E-06    0.87612E-06
+ *** arrived at the Maximum iteration.  terminated
+     >>>  ITERATION ENDED   AT Fri Apr 21 16:59:58 2023  <<<
+
+
+==  Summary Of Results  ==
+
+ number of electrons: spin up=   11.00000  down=    9.00000 (real space)
+
+ total     energy    :  -0.1524621530E+03 (   -0.15246E+03/ion)
+ total orbital energy:  -0.1106831854E+02 (   -0.55342E+00/electron)
+ hartree   energy    :   0.1141940731E+03 (    0.57097E+01/electron)
+ exc-corr  energy    :  -0.2724888177E+02 (   -0.13624E+01/electron)
+ ion-ion   energy    :  -0.2182536523E+02 (   -0.21825E+02/ion)
+
+ kinetic (planewave) :   0.1474283220E+03 (    0.73714E+01/electron)
+ V_local (planewave) :  -0.2440305294E+03 (   -0.12202E+02/electron)
+ V_nl    (planewave) :  -0.1209797716E+03 (   -0.60490E+01/electron)
+ V_Coul  (planewave) :   0.2283881463E+03 (    0.11419E+02/electron)
+ V_xc.   (planewave) :  -0.2187448573E+02 (   -0.10937E+01/electron)
+ Virial Coefficient  :  -0.1075075931E+01
+
+ orbital energies:
+    -0.1179247E+00 (  -3.209eV)
+    -0.1228401E+00 (  -3.343eV)
+    -0.1286685E+00 (  -3.501eV)    -0.8694244E-01 (  -2.366eV)
+    -0.1634525E+00 (  -4.448eV)    -0.9571660E-01 (  -2.605eV)
+    -0.1704872E+00 (  -4.639eV)    -0.9807600E-01 (  -2.669eV)
+    -0.1774226E+00 (  -4.828eV)    -0.1690324E+00 (  -4.600eV)
+    -0.2275527E+00 (  -6.192eV)    -0.1760210E+00 (  -4.790eV)
+    -0.9620496E+00 ( -26.179eV)    -0.9147626E+00 ( -24.892eV)
+    -0.9636280E+00 ( -26.222eV)    -0.9397054E+00 ( -25.571eV)
+    -0.9650540E+00 ( -26.261eV)    -0.9454721E+00 ( -25.728eV)
+    -0.1843637E+01 ( -50.168eV)    -0.1799873E+01 ( -48.977eV)
+
+ Total PSPW energy     :  -0.1524621530E+03
+
+
+=== Spin Contamination ===
+
+ <Sexact^2> =    2.0000000000000000     
+ <S^2>      =    3.1339040722998242     
+
+
+
+== Center of Charge ==
+
+spin up     (    0.0000,   -0.0000,    0.0000 )
+spin down   (   -0.0000,    0.0000,   -0.0000 )
+     total  (   -0.0000,    0.0000,   -0.0000 )
+ionic       (    0.0000,    0.0000,    0.0000 )
+
+
+== Molecular Dipole wrt Center of Mass ==
+
+mu   =  (    0.0000,   -0.0000,    0.0000 ) au
+|mu| =     0.0000 au,       0.0000 Debye
+
+ output psi filename:./perm/pspw-pbe-Dy1.movecs
+
+ Writing Crystallographic Information File:./perm/Dy1.cif
+   - cell not shifted (nwpw:cif_shift_cell .false.)
+
+
+== Timing ==
+
+cputime in seconds
+  prologue    :   0.145836E+02
+  main loop   :   0.146851E+04
+  epilogue    :   0.617070E+00
+  total       :   0.148371E+04
+  cputime/step:   0.551241E+00       (    2664 evalulations,    1000 linesearches)
+
+
+Time spent doing                        total          step       percent
+  total time                 :   0.148371E+04  0.556948E+00       100.0 %
+  i/o time                   :   0.140847E+02  0.528704E-02         0.9 %
+  FFTs                       :   0.320555E+03  0.120329E+00        21.6 %
+  dot products               :   0.387220E+02  0.145353E-01         2.6 %
+  geodesic                   :   0.663354E+02  0.249007E-01         4.5 %
+  ffm_dgemm                  :   0.122062E+02  0.458190E-02         0.8 %
+  fmf_dgemm                  :   0.547174E+02  0.205396E-01         3.7 %
+  mmm_dgemm                  :   0.612345E-01  0.229859E-04         0.0 %
+  m_diagonalize              :   0.348601E-01  0.130856E-04         0.0 %
+  exchange correlation       :   0.583460E+03  0.219017E+00        39.3 %
+  local pseudopotentials     :   0.823000E-03  0.308934E-06         0.0 %
+  non-local pseudopotentials :   0.394723E+02  0.148169E-01         2.7 %
+  hartree potentials         :   0.161329E+01  0.605589E-03         0.1 %
+  ion-ion interaction        :   0.122689E+00  0.460544E-04         0.0 %
+  structure factors          :   0.354866E+00  0.133208E-03         0.0 %
+  phase factors              :   0.399900E-05  0.150113E-08         0.0 %
+  masking and packing        :   0.614876E+02  0.230809E-01         4.1 %
+  queue fft                  :   0.609582E+03  0.228822E+00        41.1 %
+  queue fft (serial)         :   0.306030E+03  0.114876E+00        20.6 %
+  queue fft (message passing):   0.289578E+03  0.108700E+00        19.5 %
+  non-local psp FFM          :   0.200117E+02  0.751191E-02         1.3 %
+  non-local psp FMF          :   0.156867E+02  0.588842E-02         1.1 %
+  non-local psp FFM A        :   0.328936E+01  0.123475E-02         0.2 %
+  non-local psp FFM B        :   0.153545E+02  0.576370E-02         1.0 %
+
+     >>>  JOB COMPLETED     AT Fri Apr 21 16:59:59 2023  <<<
+
+ Task  times  cpu:     2764.4s     wall:     2764.4s
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+ Summary of allocated global arrays
+-----------------------------------
+  No active global arrays
+
+
+MA_summarize_allocated_blocks: starting scan ...
+MA_summarize_allocated_blocks: scan completed: 0 heap blocks, 0 stack blocks
+MA usage statistics:
+
+	allocation statistics:
+					      heap	     stack
+					      ----	     -----
+	current number of blocks	         0	         0
+	maximum number of blocks	       277	        21
+	current total bytes		         0	         0
+	maximum total bytes		 440798504	 107892072
+	maximum total K-bytes		    440799	    107893
+	maximum total M-bytes		       441	       108
+
+
+                                     CITATION
+                                     --------
+                Please cite the following reference when publishing
+                           results obtained with NWChem:
+
+          E. Apra, E. J. Bylaska, W. A. de Jong, N. Govind, K. Kowalski,
+       T. P. Straatsma, M. Valiev, H. J. J. van Dam, Y. Alexeev, J. Anchell,
+       V. Anisimov, F. W. Aquino, R. Atta-Fynn, J. Autschbach, N. P. Bauman,
+     J. C. Becca, D. E. Bernholdt, K. Bhaskaran-Nair, S. Bogatko, P. Borowski,
+         J. Boschen, J. Brabec, A. Bruner, E. Cauet, Y. Chen, G. N. Chuev,
+      C. J. Cramer, J. Daily, M. J. O. Deegan, T. H. Dunning Jr., M. Dupuis,
+   K. G. Dyall, G. I. Fann, S. A. Fischer, A. Fonari, H. Fruchtl, L. Gagliardi,
+      J. Garza, N. Gawande, S. Ghosh, K. Glaesemann, A. W. Gotz, J. Hammond,
+       V. Helms, E. D. Hermes, K. Hirao, S. Hirata, M. Jacquelin, L. Jensen,
+   B. G. Johnson, H. Jonsson, R. A. Kendall, M. Klemm, R. Kobayashi, V. Konkov,
+      S. Krishnamoorthy, M. Krishnan, Z. Lin, R. D. Lins, R. J. Littlefield,
+      A. J. Logsdail, K. Lopata, W. Ma, A. V. Marenich, J. Martin del Campo,
+   D. Mejia-Rodriguez, J. E. Moore, J. M. Mullin, T. Nakajima, D. R. Nascimento,
+    J. A. Nichols, P. J. Nichols, J. Nieplocha, A. Otero-de-la-Roza, B. Palmer,
+    A. Panyala, T. Pirojsirikul, B. Peng, R. Peverati, J. Pittner, L. Pollack,
+   R. M. Richard, P. Sadayappan, G. C. Schatz, W. A. Shelton, D. W. Silverstein,
+   D. M. A. Smith, T. A. Soares, D. Song, M. Swart, H. L. Taylor, G. S. Thomas,
+            V. Tipparaju, D. G. Truhlar, K. Tsemekhman, T. Van Voorhis,
+      A. Vazquez-Mayagoitia, P. Verma, O. Villa, A. Vishnu, K. D. Vogiatzis,
+        D. Wang, J. H. Weare, M. J. Williamson, T. L. Windus, K. Wolinski,
+        A. T. Wong, Q. Wu, C. Yang, Q. Yu, M. Zacharias, Z. Zhang, Y. Zhao,
+                                and R. J. Harrison
+                        "NWChem: Past, present, and future
+                         J. Chem. Phys. 152, 184102 (2020)
+                               doi:10.1063/5.0004997
+
+                                      AUTHORS
+                                      -------
+  E. Apra, E. J. Bylaska, N. Govind, K. Kowalski, M. Valiev, D. Mejia-Rodriguez,
+       A. Kunitsa, N. P. Bauman, A. Panyala, W. A. de Jong, T. P. Straatsma,
+   H. J. J. van Dam, D. Wang, T. L. Windus, J. Hammond, J. Autschbach, A. Woods,
+    K. Bhaskaran-Nair, J. Brabec, K. Lopata, S. A. Fischer, S. Krishnamoorthy,
+     M. Jacquelin, W. Ma, M. Klemm, O. Villa, Y. Chen, V. Anisimov, F. Aquino,
+     S. Hirata, M. T. Hackler, E. Hermes, L. Jensen, J. E. Moore, J. C. Becca,
+      V. Konjkov, T. Risthaus, M. Malagoli, A. Marenich, A. Otero-de-la-Roza,
+        J. Mullin, P. Nichols, R. Peverati, J. Pittner, Y. Zhao, P.-D. Fan,
+        A. Fonari, M. J. Williamson, R. J. Harrison, J. R. Rehr, M. Dupuis,
+     D. Silverstein, D. M. A. Smith, J. Nieplocha, V. Tipparaju, M. Krishnan,
+     B. E. Van Kuiken, A. Vazquez-Mayagoitia, M. Swart, Q. Wu, T. Van Voorhis,
+     A. A. Auer, M. Nooijen, L. D. Crosby, E. Brown, G. Cisneros, G. I. Fann,
+   H. Fruchtl, J. Garza, K. Hirao, R. A. Kendall, J. A. Nichols, K. Tsemekhman,
+    K. Wolinski, J. Anchell, D. E. Bernholdt, P. Borowski, T. Clark, D. Clerc,
+   H. Dachsel, M. J. O. Deegan, K. Dyall, D. Elwood, E. Glendening, M. Gutowski,
+   A. C. Hess, J. Jaffe, B. G. Johnson, J. Ju, R. Kobayashi, R. Kutteh, Z. Lin,
+   R. Littlefield, X. Long, B. Meng, T. Nakajima, S. Niu, L. Pollack, M. Rosing,
+   K. Glaesemann, G. Sandrone, M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe,
+                               A. T. Wong, Z. Zhang.
+
+ Total times  cpu:     2764.4s     wall:     2764.4s

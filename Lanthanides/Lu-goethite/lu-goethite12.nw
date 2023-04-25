@@ -119,6 +119,7 @@ end
 set nwpw:cif_filename goethite_Lu82_paw
 
 
+set nwpw:gram-schmidt .true.
 set nwpw:cutoff_boot_psi .false.
 nwpw
   ### pseudopotential block begin ###
@@ -136,9 +137,11 @@ nwpw
    odft
    pspspin up   f -1.0 1 4 17 20 33 36 49 52 65 68 81 84
    pspspin down f -1.0 2 3 18 19 34 35 50 51 66 67 82 83
-   time_step 5.0
 
-   loop 2 2
+   time_step 1.0
+   #use_grid_cmp
+
+   loop 2 10
 
    ewald_rcut 3.5
    ewald_ncut 8

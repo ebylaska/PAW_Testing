@@ -3202,3 +3202,1557 @@ converting .... psi:  258 spin: 2
     ------------------------------------------------------
       10   -0.1953720221E+04   -0.36189E-01    0.77706E-03
      -  10 steepest descent iterations performed
+      20   -0.1954271890E+04   -0.22402E-01    0.47093E-03
+     -  10 steepest descent iterations performed
+      30   -0.1954766167E+04   -0.48000E-01    0.10878E-02
+     -  10 steepest descent iterations performed
+      40   -0.1955133654E+04   -0.16641E-01    0.36677E-03
+     -  10 steepest descent iterations performed
+      50   -0.1955478611E+04   -0.34756E-01    0.75407E-03
+     -  10 steepest descent iterations performed
+      60   -0.1955992087E+04   -0.12878E-01    0.28458E-03
+     -  10 steepest descent iterations performed
+      70   -0.1956246924E+04   -0.24971E-01    0.54702E-03
+     -  10 steepest descent iterations performed
+      80   -0.1956676877E+04   -0.11953E-01    0.27154E-03
+     -  10 steepest descent iterations performed
+      90   -0.1956928196E+04   -0.25121E-01    0.53362E-03
+     -  10 steepest descent iterations performed
+     100   -0.1958646291E+04   -0.16306E-01    0.51161E-03
+ *** arrived at the Maximum iteration.  terminated
+     >>>  ITERATION ENDED   AT Tue Jan 24 11:42:55 2023  <<<
+
+
+==  Summary Of Results  ==
+
+ number of electrons: spin up=  263.00000  down=  258.00000 (real space)
+     plane-wave part:           258.08484         253.08179 (real space)
+      augmented part:             4.91516           4.91821 (real space)
+
+ total     energy    :  -0.1958646291E+04 (   -0.20403E+02/ion)
+
+ total paw energy    :  -0.1603292479E+05 (   -0.16701E+03/ion)
+ total orbital energy:   0.1253513988E+02 (    0.24060E-01/electron)
+ hartree   energy    :   0.3361332579E+03 (    0.64517E+00/electron)
+ exc-corr  energy    :  -0.5026379890E+03 (   -0.96476E+00/electron)
+ ion-ion   energy    :  -0.1123723142E+04 (   -0.11705E+02/ion)
+
+ kinetic (planewave) :   0.1173983317E+04 (    0.22533E+01/electron)
+ V_local (planewave) :  -0.7661119453E+03 (   -0.14705E+01/electron)
+ V_nl    (planewave) :  -0.7431274081E+03 (   -0.14263E+01/electron)
+ V_Coul  (planewave) :   0.6722665158E+03 (    0.12903E+01/electron)
+ V_xc.   (planewave) :  -0.3906383399E+03 (   -0.74979E+00/electron)
+ Virial Coefficient  :  -0.1045680258E+01
+
+ kinetic (loc. basis):   0.4598393227E+03 (    0.88261E+00/electron)
+ kinetic       (core):   0.1428099103E+05 (    0.14876E+03/ion)
+ valence-core        :  -0.1351632039E+03 (   -0.25943E+00/electron)
+ ncmp*V_local        :  -0.4963471778E+03 (   -0.95268E+00/electron)
+ V_lpaw  (loc. basis):  -0.3490648107E+02 (   -0.66999E-01/electron)
+ coulomb (loc. basis):  -0.2891530409E+02 (   -0.55500E-01/electron)
+ coulomb  (ncmp-ncmp):   0.1037639980E+03 (    0.19916E+00/electron)
+ coulomb    (ncmp-pw):   0.6616300017E+02 (    0.12699E+00/electron)
+ exc-cor (loc. basis):  -0.2887266607E+03 (   -0.55418E+00/electron)
+ pxc-cor (loc. basis):  -0.3041297303E+02 (   -0.31680E+00/electron)
+ ion-core            :  -0.2835526953E+05 (   -0.29537E+03/ion)
+
+ orbital energies:
+     0.3651840E+00 (   9.937eV)
+     0.3357349E+00 (   9.136eV)
+     0.3235244E+00 (   8.804eV)
+     0.3224765E+00 (   8.775eV)
+     0.3201847E+00 (   8.713eV)
+     0.3161304E+00 (   8.602eV)     0.3494588E+00 (   9.509eV)
+     0.3122850E+00 (   8.498eV)     0.3329909E+00 (   9.061eV)
+     0.3067198E+00 (   8.346eV)     0.3301764E+00 (   8.985eV)
+     0.3061353E+00 (   8.330eV)     0.3269256E+00 (   8.896eV)
+     0.3004208E+00 (   8.175eV)     0.3231720E+00 (   8.794eV)
+     0.2996393E+00 (   8.154eV)     0.3186299E+00 (   8.670eV)
+     0.2943635E+00 (   8.010eV)     0.3165852E+00 (   8.615eV)
+     0.2918400E+00 (   7.941eV)     0.3096100E+00 (   8.425eV)
+     0.2863369E+00 (   7.792eV)     0.3079095E+00 (   8.379eV)
+     0.2854886E+00 (   7.769eV)     0.3054030E+00 (   8.311eV)
+     0.2839315E+00 (   7.726eV)     0.2998786E+00 (   8.160eV)
+     0.2817157E+00 (   7.666eV)     0.2986061E+00 (   8.126eV)
+     0.2797070E+00 (   7.611eV)     0.2922264E+00 (   7.952eV)
+     0.2793392E+00 (   7.601eV)     0.2869172E+00 (   7.807eV)
+     0.2752559E+00 (   7.490eV)     0.2865632E+00 (   7.798eV)
+     0.2732121E+00 (   7.435eV)     0.2843690E+00 (   7.738eV)
+     0.2726900E+00 (   7.420eV)     0.2824270E+00 (   7.685eV)
+     0.2715738E+00 (   7.390eV)     0.2809334E+00 (   7.645eV)
+     0.2710897E+00 (   7.377eV)     0.2802150E+00 (   7.625eV)
+     0.2687433E+00 (   7.313eV)     0.2773434E+00 (   7.547eV)
+     0.2683870E+00 (   7.303eV)     0.2760800E+00 (   7.513eV)
+     0.2670470E+00 (   7.267eV)     0.2753206E+00 (   7.492eV)
+     0.2665233E+00 (   7.253eV)     0.2747424E+00 (   7.476eV)
+     0.2663228E+00 (   7.247eV)     0.2739041E+00 (   7.453eV)
+     0.2632369E+00 (   7.163eV)     0.2718767E+00 (   7.398eV)
+     0.2626887E+00 (   7.148eV)     0.2714713E+00 (   7.387eV)
+     0.2618103E+00 (   7.124eV)     0.2706091E+00 (   7.364eV)
+     0.2613114E+00 (   7.111eV)     0.2692619E+00 (   7.327eV)
+     0.2597690E+00 (   7.069eV)     0.2677760E+00 (   7.287eV)
+     0.2591106E+00 (   7.051eV)     0.2672461E+00 (   7.272eV)
+     0.2582468E+00 (   7.027eV)     0.2667848E+00 (   7.260eV)
+     0.2570980E+00 (   6.996eV)     0.2646387E+00 (   7.201eV)
+     0.2564486E+00 (   6.978eV)     0.2633007E+00 (   7.165eV)
+     0.2538598E+00 (   6.908eV)     0.2627624E+00 (   7.150eV)
+     0.2531664E+00 (   6.889eV)     0.2618439E+00 (   7.125eV)
+     0.2519971E+00 (   6.857eV)     0.2593789E+00 (   7.058eV)
+     0.2507838E+00 (   6.824eV)     0.2583419E+00 (   7.030eV)
+     0.2501080E+00 (   6.806eV)     0.2571981E+00 (   6.999eV)
+     0.2488785E+00 (   6.772eV)     0.2563362E+00 (   6.975eV)
+     0.2464175E+00 (   6.705eV)     0.2555622E+00 (   6.954eV)
+     0.2456209E+00 (   6.684eV)     0.2546477E+00 (   6.929eV)
+     0.2442888E+00 (   6.647eV)     0.2530369E+00 (   6.886eV)
+     0.2437874E+00 (   6.634eV)     0.2514313E+00 (   6.842eV)
+     0.2420239E+00 (   6.586eV)     0.2501963E+00 (   6.808eV)
+     0.2418021E+00 (   6.580eV)     0.2488810E+00 (   6.772eV)
+     0.2412006E+00 (   6.563eV)     0.2474563E+00 (   6.734eV)
+     0.2393667E+00 (   6.514eV)     0.2473352E+00 (   6.730eV)
+     0.2380003E+00 (   6.476eV)     0.2459625E+00 (   6.693eV)
+     0.2371464E+00 (   6.453eV)     0.2453167E+00 (   6.675eV)
+     0.2354140E+00 (   6.406eV)     0.2445778E+00 (   6.655eV)
+     0.2350301E+00 (   6.396eV)     0.2430898E+00 (   6.615eV)
+     0.2342972E+00 (   6.376eV)     0.2416571E+00 (   6.576eV)
+     0.2322152E+00 (   6.319eV)     0.2399282E+00 (   6.529eV)
+     0.2309132E+00 (   6.284eV)     0.2389211E+00 (   6.501eV)
+     0.2299540E+00 (   6.257eV)     0.2385001E+00 (   6.490eV)
+     0.2268642E+00 (   6.173eV)     0.2364922E+00 (   6.435eV)
+     0.2219852E+00 (   6.041eV)     0.2325597E+00 (   6.328eV)
+     0.2159810E+00 (   5.877eV)     0.2253452E+00 (   6.132eV)
+     0.2131929E+00 (   5.801eV)     0.2202625E+00 (   5.994eV)
+     0.2071340E+00 (   5.636eV)     0.2099323E+00 (   5.713eV)
+     0.2017502E+00 (   5.490eV)     0.2063883E+00 (   5.616eV)
+     0.1952434E+00 (   5.313eV)     0.1985072E+00 (   5.402eV)
+     0.1928761E+00 (   5.248eV)     0.1935579E+00 (   5.267eV)
+     0.1903306E+00 (   5.179eV)     0.1927045E+00 (   5.244eV)
+     0.1868600E+00 (   5.085eV)     0.1888652E+00 (   5.139eV)
+     0.1823545E+00 (   4.962eV)     0.1838927E+00 (   5.004eV)
+     0.1821547E+00 (   4.957eV)     0.1832930E+00 (   4.988eV)
+     0.1788663E+00 (   4.867eV)     0.1817349E+00 (   4.945eV)
+     0.1764483E+00 (   4.801eV)     0.1765874E+00 (   4.805eV)
+     0.1751580E+00 (   4.766eV)     0.1760927E+00 (   4.792eV)
+     0.1742539E+00 (   4.742eV)     0.1735437E+00 (   4.722eV)
+     0.1733145E+00 (   4.716eV)     0.1733854E+00 (   4.718eV)
+     0.1706671E+00 (   4.644eV)     0.1714171E+00 (   4.665eV)
+     0.1659327E+00 (   4.515eV)     0.1683586E+00 (   4.581eV)
+     0.1644483E+00 (   4.475eV)     0.1668736E+00 (   4.541eV)
+     0.1640800E+00 (   4.465eV)     0.1659613E+00 (   4.516eV)
+     0.1626238E+00 (   4.425eV)     0.1640185E+00 (   4.463eV)
+     0.1600628E+00 (   4.356eV)     0.1635770E+00 (   4.451eV)
+     0.1597282E+00 (   4.346eV)     0.1622185E+00 (   4.414eV)
+     0.1588257E+00 (   4.322eV)     0.1611560E+00 (   4.385eV)
+     0.1582350E+00 (   4.306eV)     0.1602721E+00 (   4.361eV)
+     0.1570501E+00 (   4.274eV)     0.1600384E+00 (   4.355eV)
+     0.1567964E+00 (   4.267eV)     0.1579084E+00 (   4.297eV)
+     0.1559436E+00 (   4.243eV)     0.1576197E+00 (   4.289eV)
+     0.1541351E+00 (   4.194eV)     0.1568292E+00 (   4.268eV)
+     0.1538890E+00 (   4.188eV)     0.1557743E+00 (   4.239eV)
+     0.1527837E+00 (   4.157eV)     0.1552943E+00 (   4.226eV)
+     0.1525275E+00 (   4.151eV)     0.1543889E+00 (   4.201eV)
+     0.1495403E+00 (   4.069eV)     0.1539771E+00 (   4.190eV)
+     0.1491767E+00 (   4.059eV)     0.1515821E+00 (   4.125eV)
+     0.1483784E+00 (   4.038eV)     0.1505417E+00 (   4.096eV)
+     0.1470075E+00 (   4.000eV)     0.1490831E+00 (   4.057eV)
+     0.1461285E+00 (   3.976eV)     0.1481626E+00 (   4.032eV)
+     0.1459554E+00 (   3.972eV)     0.1473760E+00 (   4.010eV)
+     0.1452960E+00 (   3.954eV)     0.1464585E+00 (   3.985eV)
+     0.1444943E+00 (   3.932eV)     0.1460321E+00 (   3.974eV)
+     0.1436625E+00 (   3.909eV)     0.1453767E+00 (   3.956eV)
+     0.1428570E+00 (   3.887eV)     0.1437240E+00 (   3.911eV)
+     0.1411349E+00 (   3.841eV)     0.1425456E+00 (   3.879eV)
+     0.1401881E+00 (   3.815eV)     0.1417362E+00 (   3.857eV)
+     0.1393167E+00 (   3.791eV)     0.1406155E+00 (   3.826eV)
+     0.1382055E+00 (   3.761eV)     0.1400861E+00 (   3.812eV)
+     0.1374682E+00 (   3.741eV)     0.1385958E+00 (   3.771eV)
+     0.1364707E+00 (   3.714eV)     0.1379194E+00 (   3.753eV)
+     0.1355325E+00 (   3.688eV)     0.1373640E+00 (   3.738eV)
+     0.1344451E+00 (   3.658eV)     0.1361055E+00 (   3.704eV)
+     0.1325544E+00 (   3.607eV)     0.1332502E+00 (   3.626eV)
+     0.1296364E+00 (   3.528eV)     0.1313753E+00 (   3.575eV)
+     0.1286437E+00 (   3.501eV)     0.1301468E+00 (   3.542eV)
+     0.1271383E+00 (   3.460eV)     0.1293819E+00 (   3.521eV)
+     0.1265787E+00 (   3.444eV)     0.1279989E+00 (   3.483eV)
+     0.1252327E+00 (   3.408eV)     0.1272039E+00 (   3.461eV)
+     0.1241515E+00 (   3.378eV)     0.1268088E+00 (   3.451eV)
+     0.1235111E+00 (   3.361eV)     0.1249543E+00 (   3.400eV)
+     0.1227198E+00 (   3.339eV)     0.1238785E+00 (   3.371eV)
+     0.1211644E+00 (   3.297eV)     0.1226136E+00 (   3.337eV)
+     0.1192954E+00 (   3.246eV)     0.1187176E+00 (   3.230eV)
+     0.1171364E+00 (   3.187eV)     0.1173956E+00 (   3.195eV)
+     0.1148320E+00 (   3.125eV)     0.1168874E+00 (   3.181eV)
+     0.1134712E+00 (   3.088eV)     0.1155064E+00 (   3.143eV)
+     0.1122201E+00 (   3.054eV)     0.1144954E+00 (   3.116eV)
+     0.1110306E+00 (   3.021eV)     0.1130244E+00 (   3.076eV)
+     0.1098679E+00 (   2.990eV)     0.1125564E+00 (   3.063eV)
+     0.1093077E+00 (   2.974eV)     0.1115639E+00 (   3.036eV)
+     0.1089739E+00 (   2.965eV)     0.1109685E+00 (   3.020eV)
+     0.1085968E+00 (   2.955eV)     0.1104758E+00 (   3.006eV)
+     0.1081118E+00 (   2.942eV)     0.1093926E+00 (   2.977eV)
+     0.1072568E+00 (   2.919eV)     0.1093384E+00 (   2.975eV)
+     0.1070619E+00 (   2.913eV)     0.1083149E+00 (   2.947eV)
+     0.1060910E+00 (   2.887eV)     0.1081557E+00 (   2.943eV)
+     0.1056003E+00 (   2.874eV)     0.1077626E+00 (   2.932eV)
+     0.1053057E+00 (   2.866eV)     0.1070332E+00 (   2.913eV)
+     0.1051363E+00 (   2.861eV)     0.1067844E+00 (   2.906eV)
+     0.1041903E+00 (   2.835eV)     0.1061664E+00 (   2.889eV)
+     0.1041021E+00 (   2.833eV)     0.1058554E+00 (   2.880eV)
+     0.1036453E+00 (   2.820eV)     0.1053009E+00 (   2.865eV)
+     0.1029878E+00 (   2.802eV)     0.1043713E+00 (   2.840eV)
+     0.1020738E+00 (   2.778eV)     0.1034482E+00 (   2.815eV)
+     0.1013456E+00 (   2.758eV)     0.1031266E+00 (   2.806eV)
+     0.1010605E+00 (   2.750eV)     0.1020800E+00 (   2.778eV)
+     0.1005489E+00 (   2.736eV)     0.1008322E+00 (   2.744eV)
+     0.9785152E-01 (   2.663eV)     0.9974434E-01 (   2.714eV)
+     0.9748901E-01 (   2.653eV)     0.9945855E-01 (   2.706eV)
+     0.9708602E-01 (   2.642eV)     0.9917985E-01 (   2.699eV)
+     0.9610570E-01 (   2.615eV)     0.9825585E-01 (   2.674eV)
+     0.9474182E-01 (   2.578eV)     0.9720213E-01 (   2.645eV)
+     0.9425643E-01 (   2.565eV)     0.9632453E-01 (   2.621eV)
+     0.9395531E-01 (   2.557eV)     0.9584191E-01 (   2.608eV)
+     0.9312375E-01 (   2.534eV)     0.9571606E-01 (   2.605eV)
+     0.9285069E-01 (   2.527eV)     0.9527722E-01 (   2.593eV)
+     0.9207052E-01 (   2.505eV)     0.9518073E-01 (   2.590eV)
+     0.9123684E-01 (   2.483eV)     0.9422890E-01 (   2.564eV)
+     0.9120453E-01 (   2.482eV)     0.9375069E-01 (   2.551eV)
+     0.9086294E-01 (   2.473eV)     0.9269455E-01 (   2.522eV)
+     0.8983370E-01 (   2.445eV)     0.9266523E-01 (   2.522eV)
+     0.8918757E-01 (   2.427eV)     0.9189991E-01 (   2.501eV)
+     0.8905484E-01 (   2.423eV)     0.9160294E-01 (   2.493eV)
+     0.8623922E-01 (   2.347eV)     0.9100891E-01 (   2.476eV)
+     0.8385587E-01 (   2.282eV)     0.8609480E-01 (   2.343eV)
+     0.7985425E-01 (   2.173eV)     0.8146008E-01 (   2.217eV)
+     0.7828117E-01 (   2.130eV)     0.7961296E-01 (   2.166eV)
+     0.7570197E-01 (   2.060eV)     0.7747556E-01 (   2.108eV)
+     0.7503891E-01 (   2.042eV)     0.7661210E-01 (   2.085eV)
+     0.7401929E-01 (   2.014eV)     0.7513713E-01 (   2.045eV)
+     0.7310831E-01 (   1.989eV)     0.7439752E-01 (   2.024eV)
+     0.7215529E-01 (   1.963eV)     0.7379424E-01 (   2.008eV)
+     0.7062975E-01 (   1.922eV)     0.7181910E-01 (   1.954eV)
+     0.6765781E-01 (   1.841eV)     0.6924762E-01 (   1.884eV)
+     0.6722614E-01 (   1.829eV)     0.6852924E-01 (   1.865eV)
+     0.6439746E-01 (   1.752eV)     0.6625350E-01 (   1.803eV)
+     0.6370931E-01 (   1.734eV)     0.6538313E-01 (   1.779eV)
+     0.6297266E-01 (   1.714eV)     0.6423448E-01 (   1.748eV)
+     0.6195097E-01 (   1.686eV)     0.6367031E-01 (   1.733eV)
+     0.5569986E-01 (   1.516eV)     0.5710027E-01 (   1.554eV)
+     0.5455782E-01 (   1.485eV)     0.5633088E-01 (   1.533eV)
+     0.5397175E-01 (   1.469eV)     0.5534850E-01 (   1.506eV)
+     0.5322096E-01 (   1.448eV)     0.5463097E-01 (   1.487eV)
+     0.5194095E-01 (   1.413eV)     0.5363156E-01 (   1.459eV)
+     0.5124759E-01 (   1.395eV)     0.5238678E-01 (   1.426eV)
+     0.4507656E-01 (   1.227eV)     0.4493810E-01 (   1.223eV)
+     0.4118113E-01 (   1.121eV)     0.4290766E-01 (   1.168eV)
+     0.4039224E-01 (   1.099eV)     0.4201096E-01 (   1.143eV)
+     0.1404479E-01 (   0.382eV)     0.1554608E-01 (   0.423eV)
+     0.9976063E-02 (   0.271eV)     0.1099961E-01 (   0.299eV)
+     0.8593241E-02 (   0.234eV)     0.9757452E-02 (   0.266eV)
+     0.6460799E-02 (   0.176eV)     0.7855693E-02 (   0.214eV)
+     0.4873580E-02 (   0.133eV)     0.5738897E-02 (   0.156eV)
+     0.3271900E-02 (   0.089eV)     0.4386309E-02 (   0.119eV)
+     0.2671653E-02 (   0.073eV)     0.3813211E-02 (   0.104eV)
+     0.2426120E-02 (   0.066eV)     0.3133788E-02 (   0.085eV)
+    -0.6475551E-02 (  -0.176eV)    -0.5301632E-02 (  -0.144eV)
+    -0.7117339E-02 (  -0.194eV)    -0.5914444E-02 (  -0.161eV)
+    -0.7180670E-02 (  -0.195eV)    -0.6233458E-02 (  -0.170eV)
+    -0.7849366E-02 (  -0.214eV)    -0.6881437E-02 (  -0.187eV)
+    -0.2623796E-01 (  -0.714eV)    -0.2534121E-01 (  -0.690eV)
+    -0.2728323E-01 (  -0.742eV)    -0.2648500E-01 (  -0.721eV)
+    -0.2828619E-01 (  -0.770eV)    -0.2756159E-01 (  -0.750eV)
+    -0.3084533E-01 (  -0.839eV)    -0.2986839E-01 (  -0.813eV)
+    -0.3152045E-01 (  -0.858eV)    -0.3071473E-01 (  -0.836eV)
+    -0.3193392E-01 (  -0.869eV)    -0.3109210E-01 (  -0.846eV)
+    -0.3508453E-01 (  -0.955eV)    -0.3421303E-01 (  -0.931eV)
+    -0.3607658E-01 (  -0.982eV)    -0.3525778E-01 (  -0.959eV)
+    -0.3791363E-01 (  -1.032eV)    -0.3721798E-01 (  -1.013eV)
+    -0.4107193E-01 (  -1.118eV)    -0.4021770E-01 (  -1.094eV)
+    -0.4799218E-01 (  -1.306eV)    -0.4725277E-01 (  -1.286eV)
+    -0.5969227E-01 (  -1.624eV)    -0.5879588E-01 (  -1.600eV)
+    -0.3607126E+00 (  -9.816eV)    -0.3602177E+00 (  -9.802eV)
+    -0.3675160E+00 ( -10.001eV)    -0.3653821E+00 (  -9.943eV)
+    -0.3774053E+00 ( -10.270eV)    -0.3763875E+00 ( -10.242eV)
+    -0.3845396E+00 ( -10.464eV)    -0.3831591E+00 ( -10.426eV)
+    -0.3865304E+00 ( -10.518eV)    -0.3849353E+00 ( -10.475eV)
+    -0.3872917E+00 ( -10.539eV)    -0.3854452E+00 ( -10.489eV)
+    -0.3885757E+00 ( -10.574eV)    -0.3876130E+00 ( -10.548eV)
+    -0.3894004E+00 ( -10.596eV)    -0.3881562E+00 ( -10.562eV)
+    -0.3915131E+00 ( -10.654eV)    -0.3905406E+00 ( -10.627eV)
+    -0.3922478E+00 ( -10.674eV)    -0.3915355E+00 ( -10.654eV)
+    -0.3926723E+00 ( -10.685eV)    -0.3921247E+00 ( -10.670eV)
+    -0.3939455E+00 ( -10.720eV)    -0.3922228E+00 ( -10.673eV)
+    -0.3942542E+00 ( -10.728eV)    -0.3935563E+00 ( -10.709eV)
+    -0.3953402E+00 ( -10.758eV)    -0.3943241E+00 ( -10.730eV)
+    -0.3956446E+00 ( -10.766eV)    -0.3945184E+00 ( -10.735eV)
+    -0.3963807E+00 ( -10.786eV)    -0.3951984E+00 ( -10.754eV)
+    -0.3968967E+00 ( -10.800eV)    -0.3962963E+00 ( -10.784eV)
+    -0.3985236E+00 ( -10.844eV)    -0.3966763E+00 ( -10.794eV)
+    -0.3990447E+00 ( -10.859eV)    -0.3978856E+00 ( -10.827eV)
+    -0.3994349E+00 ( -10.869eV)    -0.3991515E+00 ( -10.862eV)
+    -0.4017173E+00 ( -10.931eV)    -0.4008109E+00 ( -10.907eV)
+    -0.4030559E+00 ( -10.968eV)    -0.4025327E+00 ( -10.954eV)
+    -0.4042487E+00 ( -11.000eV)    -0.4037877E+00 ( -10.988eV)
+    -0.4072558E+00 ( -11.082eV)    -0.4065939E+00 ( -11.064eV)
+    -0.4511923E+00 ( -12.278eV)    -0.4508672E+00 ( -12.269eV)
+    -0.4521726E+00 ( -12.304eV)    -0.4517648E+00 ( -12.293eV)
+    -0.4537721E+00 ( -12.348eV)    -0.4533534E+00 ( -12.336eV)
+    -0.4545303E+00 ( -12.368eV)    -0.4536996E+00 ( -12.346eV)
+    -0.4549711E+00 ( -12.380eV)    -0.4540878E+00 ( -12.356eV)
+    -0.4573065E+00 ( -12.444eV)    -0.4559670E+00 ( -12.408eV)
+    -0.4576475E+00 ( -12.453eV)    -0.4573562E+00 ( -12.445eV)
+    -0.4586220E+00 ( -12.480eV)    -0.4581089E+00 ( -12.466eV)
+    -0.4591157E+00 ( -12.493eV)    -0.4584620E+00 ( -12.475eV)
+    -0.4600219E+00 ( -12.518eV)    -0.4585321E+00 ( -12.477eV)
+    -0.4603937E+00 ( -12.528eV)    -0.4598868E+00 ( -12.514eV)
+    -0.4615190E+00 ( -12.559eV)    -0.4606665E+00 ( -12.535eV)
+    -0.4627018E+00 ( -12.591eV)    -0.4619207E+00 ( -12.570eV)
+    -0.4640598E+00 ( -12.628eV)    -0.4631582E+00 ( -12.603eV)
+    -0.4648734E+00 ( -12.650eV)    -0.4635766E+00 ( -12.615eV)
+    -0.4655249E+00 ( -12.668eV)    -0.4648110E+00 ( -12.648eV)
+    -0.4665223E+00 ( -12.695eV)    -0.4660584E+00 ( -12.682eV)
+    -0.4671673E+00 ( -12.712eV)    -0.4666134E+00 ( -12.697eV)
+    -0.4694775E+00 ( -12.775eV)    -0.4690686E+00 ( -12.764eV)
+    -0.4724074E+00 ( -12.855eV)    -0.4711434E+00 ( -12.821eV)
+    -0.4732264E+00 ( -12.877eV)    -0.4724505E+00 ( -12.856eV)
+    -0.4745599E+00 ( -12.914eV)    -0.4737004E+00 ( -12.890eV)
+    -0.4792594E+00 ( -13.041eV)    -0.4787279E+00 ( -13.027eV)
+    -0.4884362E+00 ( -13.291eV)    -0.4875973E+00 ( -13.268eV)
+    -0.5737158E+00 ( -15.612eV)    -0.5736560E+00 ( -15.610eV)
+    -0.5815228E+00 ( -15.824eV)    -0.5812162E+00 ( -15.816eV)
+    -0.5825439E+00 ( -15.852eV)    -0.5822726E+00 ( -15.845eV)
+    -0.2298312E+01 ( -62.541eV)    -0.2299383E+01 ( -62.570eV)
+
+ Total PSPW energy     :  -0.1958646291E+04
+
+
+=== Spin Contamination ===
+
+ <Sexact^2> =    8.7500000000000000     
+ <S^2>      =    27.982976417674763     
+
+
+
+== Center of Charge ==
+
+spin up     (    0.0972,   -0.0773,    0.0387 )
+spin down   (    0.0692,   -0.0809,    0.0269 )
+     total  (    0.0833,   -0.0791,    0.0329 )
+ionic       (    0.2192,   -0.2352,    0.2694 )
+
+
+== Molecular Dipole wrt Center of Mass ==
+
+mu   =  (   70.8039,  -81.3336,  123.2182 ) au
+|mu| =   163.7409 au,     416.1639 Debye
+
+ output psi filename:./perm/goethite_Lu82.movecs
+
+ Writing Crystallographic Information File:./perm/goethite_Lu82_paw.cif
+   - cell not shifted (nwpw:cif_shift_cell .false.)
+
+
+== Timing ==
+
+cputime in seconds
+  prologue    :   0.222986E+02
+  main loop   :   0.970488E+04
+  epilogue    :   0.407580E+01
+  total       :   0.973126E+04
+  cputime/step:   0.136305E+02       (     712 evalulations,     100 linesearches)
+
+
+Time spent doing                        total          step       percent
+  total time                 :   0.973126E+04  0.136675E+02       100.0 %
+  i/o time                   :   0.197875E+02  0.277915E-01         0.2 %
+  FFTs                       :   0.171587E+02  0.240993E-01         0.2 %
+  dot products               :   0.164723E+04  0.231352E+01        16.9 %
+  geodesic                   :   0.160412E+04  0.225298E+01        16.5 %
+  ffm_dgemm                  :   0.109919E+04  0.154381E+01        11.3 %
+  fmf_dgemm                  :   0.600651E+03  0.843612E+00         6.2 %
+  mmm_dgemm                  :   0.447809E+02  0.628945E-01         0.5 %
+  m_diagonalize              :   0.605800E+01  0.850843E-02         0.1 %
+    - m_tredq                :   0.187484E+00  0.263320E-03         0.0 %
+  exchange correlation       :   0.234123E+02  0.328825E-01         0.2 %
+  local pseudopotentials     :   0.385230E-01  0.541053E-04         0.0 %
+  non-local pseudopotentials :   0.477649E+04  0.670856E+01        49.1 %
+  hartree potentials         :   0.138262E+00  0.194189E-03         0.0 %
+  ion-ion interaction        :   0.248284E+02  0.348713E-01         0.3 %
+  structure factors          :   0.186005E+01  0.261242E-02         0.0 %
+  phase factors              :   0.132000E-03  0.185393E-06         0.0 %
+  masking and packing        :   0.826026E+03  0.116015E+01         8.5 %
+  queue fft                  :   0.167920E+04  0.235843E+01        17.3 %
+  queue fft (serial)         :   0.403841E+03  0.567192E+00         4.1 %
+  queue fft (message passing):   0.126452E+04  0.177601E+01        13.0 %
+  paw gaussian integrals     :   0.425000E-03  0.596910E-06         0.0 %
+  paw atomic coulomb         :   0.230040E+02  0.323090E-01         0.2 %
+  paw atomic xc              :   0.514383E+01  0.722448E-02         0.1 %
+  paw gen dEmult/dQlm        :   0.141317E-01  0.198479E-04         0.0 %
+  paw gen dElocal/dQlm       :   0.699600E-02  0.982584E-05         0.0 %
+  paw cmp operations         :   0.699600E-02  0.982584E-05         0.0 %
+  nwpw_ugauss                :   0.300100E-05  0.421489E-08         0.0 %
+  nwpw_gaunt                 :   0.445366E+01  0.625514E-02         0.0 %
+  non-local psp FFM          :   0.407070E+03  0.571727E+00         4.2 %
+  non-local psp FMF          :   0.413734E+04  0.581087E+01        42.5 %
+  non-local psp FFM A        :   0.116748E+01  0.163972E-02         0.0 %
+  non-local psp FFM B        :   0.400494E+03  0.562492E+00         4.1 %
+
+     >>>  JOB COMPLETED     AT Tue Jan 24 11:43:00 2023  <<<
+          ****************************************************
+          *                                                  *
+          *               NWPW PSPW Calculation              *
+          *                                                  *
+          * [ (Grassmann/Stiefel manifold implementation)  ] *
+          *                                                  *
+          *      [ NorthWest Chemistry implementation ]      *
+          *                                                  *
+          *            version #5.10   06/12/02              *
+          *                                                  *
+          *    This code was developed by Eric J. Bylaska,   *
+          *    and was based upon algorithms and code        *
+          *    developed by the group of Prof. John H. Weare *
+          *                                                  *
+          ****************************************************
+     >>>  JOB STARTED       AT Tue Jan 24 11:43:00 2023  <<<
+          ================ input data ========================
+
+ Antiferromagnetic Pentalty Function Input:
+   - pspspin: up    l = 3           scale =  -1.000
+   - pspspin: up    ion indexes  =    1    4   17   20   33   36   49   52   65   68
+   - pspspin: up    ion indexes  =   81   84
+   - pspspin: down  l = 3           scale =  -1.000
+   - pspspin: down  ion indexes  =    2    3   18   19   34   35   50   51   66   67
+   - pspspin: down  ion indexes  =   83
+ pseudopotential is not correctly formatted:Fe.vpp                                            
+
+ Generated formatted_filename: ./perm/Fe.vpp
+ - filtering pseudopotential -
+ pseudopotential is not correctly formatted:H.vpp                                             
+
+ Generated formatted_filename: ./perm/H.vpp
+ - filtering pseudopotential -
+ pseudopotential is not correctly formatted:O.vpp                                             
+
+ Generated formatted_filename: ./perm/O.vpp
+ - filtering pseudopotential -
+ pseudopotential is not correctly formatted:Lu.vpp                                            
+
+ Generated formatted_filename: ./perm/Lu.vpp
+ - filtering pseudopotential -
+ Error reading psi - bad grid
+ nfft :                   84                   80                   80
+ ngrid:                   96                   90                   90
+ Error reading psi - bad grid
+ nfft :                   84                   80                   80
+ ngrid:                   96                   90                   90
+ Error reading psi - bad grid
+
+ Grid is being converted:
+ ------------------------
+
+ To turn off automatic grid conversion:
+
+ set nwpw:psi_nogrid .false.
+
+ old_filename: goethite_Lu82.movecs                              
+ new_filename: goethite_Lu82.movecs                              
+ converting  :  84x 80x 80 -->  96x 90x 90
+converting .... psi:    1 spin: 1
+converting .... psi:    2 spin: 1
+converting .... psi:    3 spin: 1
+converting .... psi:    4 spin: 1
+converting .... psi:    5 spin: 1
+converting .... psi:    6 spin: 1
+converting .... psi:    7 spin: 1
+converting .... psi:    8 spin: 1
+converting .... psi:    9 spin: 1
+converting .... psi:   10 spin: 1
+converting .... psi:   11 spin: 1
+converting .... psi:   12 spin: 1
+converting .... psi:   13 spin: 1
+converting .... psi:   14 spin: 1
+converting .... psi:   15 spin: 1
+converting .... psi:   16 spin: 1
+converting .... psi:   17 spin: 1
+converting .... psi:   18 spin: 1
+converting .... psi:   19 spin: 1
+converting .... psi:   20 spin: 1
+converting .... psi:   21 spin: 1
+converting .... psi:   22 spin: 1
+converting .... psi:   23 spin: 1
+converting .... psi:   24 spin: 1
+converting .... psi:   25 spin: 1
+converting .... psi:   26 spin: 1
+converting .... psi:   27 spin: 1
+converting .... psi:   28 spin: 1
+converting .... psi:   29 spin: 1
+converting .... psi:   30 spin: 1
+converting .... psi:   31 spin: 1
+converting .... psi:   32 spin: 1
+converting .... psi:   33 spin: 1
+converting .... psi:   34 spin: 1
+converting .... psi:   35 spin: 1
+converting .... psi:   36 spin: 1
+converting .... psi:   37 spin: 1
+converting .... psi:   38 spin: 1
+converting .... psi:   39 spin: 1
+converting .... psi:   40 spin: 1
+converting .... psi:   41 spin: 1
+converting .... psi:   42 spin: 1
+converting .... psi:   43 spin: 1
+converting .... psi:   44 spin: 1
+converting .... psi:   45 spin: 1
+converting .... psi:   46 spin: 1
+converting .... psi:   47 spin: 1
+converting .... psi:   48 spin: 1
+converting .... psi:   49 spin: 1
+converting .... psi:   50 spin: 1
+converting .... psi:   51 spin: 1
+converting .... psi:   52 spin: 1
+converting .... psi:   53 spin: 1
+converting .... psi:   54 spin: 1
+converting .... psi:   55 spin: 1
+converting .... psi:   56 spin: 1
+converting .... psi:   57 spin: 1
+converting .... psi:   58 spin: 1
+converting .... psi:   59 spin: 1
+converting .... psi:   60 spin: 1
+converting .... psi:   61 spin: 1
+converting .... psi:   62 spin: 1
+converting .... psi:   63 spin: 1
+converting .... psi:   64 spin: 1
+converting .... psi:   65 spin: 1
+converting .... psi:   66 spin: 1
+converting .... psi:   67 spin: 1
+converting .... psi:   68 spin: 1
+converting .... psi:   69 spin: 1
+converting .... psi:   70 spin: 1
+converting .... psi:   71 spin: 1
+converting .... psi:   72 spin: 1
+converting .... psi:   73 spin: 1
+converting .... psi:   74 spin: 1
+converting .... psi:   75 spin: 1
+converting .... psi:   76 spin: 1
+converting .... psi:   77 spin: 1
+converting .... psi:   78 spin: 1
+converting .... psi:   79 spin: 1
+converting .... psi:   80 spin: 1
+converting .... psi:   81 spin: 1
+converting .... psi:   82 spin: 1
+converting .... psi:   83 spin: 1
+converting .... psi:   84 spin: 1
+converting .... psi:   85 spin: 1
+converting .... psi:   86 spin: 1
+converting .... psi:   87 spin: 1
+converting .... psi:   88 spin: 1
+converting .... psi:   89 spin: 1
+converting .... psi:   90 spin: 1
+converting .... psi:   91 spin: 1
+converting .... psi:   92 spin: 1
+converting .... psi:   93 spin: 1
+converting .... psi:   94 spin: 1
+converting .... psi:   95 spin: 1
+converting .... psi:   96 spin: 1
+converting .... psi:   97 spin: 1
+converting .... psi:   98 spin: 1
+converting .... psi:   99 spin: 1
+converting .... psi:  100 spin: 1
+converting .... psi:  101 spin: 1
+converting .... psi:  102 spin: 1
+converting .... psi:  103 spin: 1
+converting .... psi:  104 spin: 1
+converting .... psi:  105 spin: 1
+converting .... psi:  106 spin: 1
+converting .... psi:  107 spin: 1
+converting .... psi:  108 spin: 1
+converting .... psi:  109 spin: 1
+converting .... psi:  110 spin: 1
+converting .... psi:  111 spin: 1
+converting .... psi:  112 spin: 1
+converting .... psi:  113 spin: 1
+converting .... psi:  114 spin: 1
+converting .... psi:  115 spin: 1
+converting .... psi:  116 spin: 1
+converting .... psi:  117 spin: 1
+converting .... psi:  118 spin: 1
+converting .... psi:  119 spin: 1
+converting .... psi:  120 spin: 1
+converting .... psi:  121 spin: 1
+converting .... psi:  122 spin: 1
+converting .... psi:  123 spin: 1
+converting .... psi:  124 spin: 1
+converting .... psi:  125 spin: 1
+converting .... psi:  126 spin: 1
+converting .... psi:  127 spin: 1
+converting .... psi:  128 spin: 1
+converting .... psi:  129 spin: 1
+converting .... psi:  130 spin: 1
+converting .... psi:  131 spin: 1
+converting .... psi:  132 spin: 1
+converting .... psi:  133 spin: 1
+converting .... psi:  134 spin: 1
+converting .... psi:  135 spin: 1
+converting .... psi:  136 spin: 1
+converting .... psi:  137 spin: 1
+converting .... psi:  138 spin: 1
+converting .... psi:  139 spin: 1
+converting .... psi:  140 spin: 1
+converting .... psi:  141 spin: 1
+converting .... psi:  142 spin: 1
+converting .... psi:  143 spin: 1
+converting .... psi:  144 spin: 1
+converting .... psi:  145 spin: 1
+converting .... psi:  146 spin: 1
+converting .... psi:  147 spin: 1
+converting .... psi:  148 spin: 1
+converting .... psi:  149 spin: 1
+converting .... psi:  150 spin: 1
+converting .... psi:  151 spin: 1
+converting .... psi:  152 spin: 1
+converting .... psi:  153 spin: 1
+converting .... psi:  154 spin: 1
+converting .... psi:  155 spin: 1
+converting .... psi:  156 spin: 1
+converting .... psi:  157 spin: 1
+converting .... psi:  158 spin: 1
+converting .... psi:  159 spin: 1
+converting .... psi:  160 spin: 1
+converting .... psi:  161 spin: 1
+converting .... psi:  162 spin: 1
+converting .... psi:  163 spin: 1
+converting .... psi:  164 spin: 1
+converting .... psi:  165 spin: 1
+converting .... psi:  166 spin: 1
+converting .... psi:  167 spin: 1
+converting .... psi:  168 spin: 1
+converting .... psi:  169 spin: 1
+converting .... psi:  170 spin: 1
+converting .... psi:  171 spin: 1
+converting .... psi:  172 spin: 1
+converting .... psi:  173 spin: 1
+converting .... psi:  174 spin: 1
+converting .... psi:  175 spin: 1
+converting .... psi:  176 spin: 1
+converting .... psi:  177 spin: 1
+converting .... psi:  178 spin: 1
+converting .... psi:  179 spin: 1
+converting .... psi:  180 spin: 1
+converting .... psi:  181 spin: 1
+converting .... psi:  182 spin: 1
+converting .... psi:  183 spin: 1
+converting .... psi:  184 spin: 1
+converting .... psi:  185 spin: 1
+converting .... psi:  186 spin: 1
+converting .... psi:  187 spin: 1
+converting .... psi:  188 spin: 1
+converting .... psi:  189 spin: 1
+converting .... psi:  190 spin: 1
+converting .... psi:  191 spin: 1
+converting .... psi:  192 spin: 1
+converting .... psi:  193 spin: 1
+converting .... psi:  194 spin: 1
+converting .... psi:  195 spin: 1
+converting .... psi:  196 spin: 1
+converting .... psi:  197 spin: 1
+converting .... psi:  198 spin: 1
+converting .... psi:  199 spin: 1
+converting .... psi:  200 spin: 1
+converting .... psi:  201 spin: 1
+converting .... psi:  202 spin: 1
+converting .... psi:  203 spin: 1
+converting .... psi:  204 spin: 1
+converting .... psi:  205 spin: 1
+converting .... psi:  206 spin: 1
+converting .... psi:  207 spin: 1
+converting .... psi:  208 spin: 1
+converting .... psi:  209 spin: 1
+converting .... psi:  210 spin: 1
+converting .... psi:  211 spin: 1
+converting .... psi:  212 spin: 1
+converting .... psi:  213 spin: 1
+converting .... psi:  214 spin: 1
+converting .... psi:  215 spin: 1
+converting .... psi:  216 spin: 1
+converting .... psi:  217 spin: 1
+converting .... psi:  218 spin: 1
+converting .... psi:  219 spin: 1
+converting .... psi:  220 spin: 1
+converting .... psi:  221 spin: 1
+converting .... psi:  222 spin: 1
+converting .... psi:  223 spin: 1
+converting .... psi:  224 spin: 1
+converting .... psi:  225 spin: 1
+converting .... psi:  226 spin: 1
+converting .... psi:  227 spin: 1
+converting .... psi:  228 spin: 1
+converting .... psi:  229 spin: 1
+converting .... psi:  230 spin: 1
+converting .... psi:  231 spin: 1
+converting .... psi:  232 spin: 1
+converting .... psi:  233 spin: 1
+converting .... psi:  234 spin: 1
+converting .... psi:  235 spin: 1
+converting .... psi:  236 spin: 1
+converting .... psi:  237 spin: 1
+converting .... psi:  238 spin: 1
+converting .... psi:  239 spin: 1
+converting .... psi:  240 spin: 1
+converting .... psi:  241 spin: 1
+converting .... psi:  242 spin: 1
+converting .... psi:  243 spin: 1
+converting .... psi:  244 spin: 1
+converting .... psi:  245 spin: 1
+converting .... psi:  246 spin: 1
+converting .... psi:  247 spin: 1
+converting .... psi:  248 spin: 1
+converting .... psi:  249 spin: 1
+converting .... psi:  250 spin: 1
+converting .... psi:  251 spin: 1
+converting .... psi:  252 spin: 1
+converting .... psi:  253 spin: 1
+converting .... psi:  254 spin: 1
+converting .... psi:  255 spin: 1
+converting .... psi:  256 spin: 1
+converting .... psi:  257 spin: 1
+converting .... psi:  258 spin: 1
+converting .... psi:  259 spin: 1
+converting .... psi:  260 spin: 1
+converting .... psi:  261 spin: 1
+converting .... psi:  262 spin: 1
+converting .... psi:  263 spin: 1
+converting .... psi:    1 spin: 2
+converting .... psi:    2 spin: 2
+converting .... psi:    3 spin: 2
+converting .... psi:    4 spin: 2
+converting .... psi:    5 spin: 2
+converting .... psi:    6 spin: 2
+converting .... psi:    7 spin: 2
+converting .... psi:    8 spin: 2
+converting .... psi:    9 spin: 2
+converting .... psi:   10 spin: 2
+converting .... psi:   11 spin: 2
+converting .... psi:   12 spin: 2
+converting .... psi:   13 spin: 2
+converting .... psi:   14 spin: 2
+converting .... psi:   15 spin: 2
+converting .... psi:   16 spin: 2
+converting .... psi:   17 spin: 2
+converting .... psi:   18 spin: 2
+converting .... psi:   19 spin: 2
+converting .... psi:   20 spin: 2
+converting .... psi:   21 spin: 2
+converting .... psi:   22 spin: 2
+converting .... psi:   23 spin: 2
+converting .... psi:   24 spin: 2
+converting .... psi:   25 spin: 2
+converting .... psi:   26 spin: 2
+converting .... psi:   27 spin: 2
+converting .... psi:   28 spin: 2
+converting .... psi:   29 spin: 2
+converting .... psi:   30 spin: 2
+converting .... psi:   31 spin: 2
+converting .... psi:   32 spin: 2
+converting .... psi:   33 spin: 2
+converting .... psi:   34 spin: 2
+converting .... psi:   35 spin: 2
+converting .... psi:   36 spin: 2
+converting .... psi:   37 spin: 2
+converting .... psi:   38 spin: 2
+converting .... psi:   39 spin: 2
+converting .... psi:   40 spin: 2
+converting .... psi:   41 spin: 2
+converting .... psi:   42 spin: 2
+converting .... psi:   43 spin: 2
+converting .... psi:   44 spin: 2
+converting .... psi:   45 spin: 2
+converting .... psi:   46 spin: 2
+converting .... psi:   47 spin: 2
+converting .... psi:   48 spin: 2
+converting .... psi:   49 spin: 2
+converting .... psi:   50 spin: 2
+converting .... psi:   51 spin: 2
+converting .... psi:   52 spin: 2
+converting .... psi:   53 spin: 2
+converting .... psi:   54 spin: 2
+converting .... psi:   55 spin: 2
+converting .... psi:   56 spin: 2
+converting .... psi:   57 spin: 2
+converting .... psi:   58 spin: 2
+converting .... psi:   59 spin: 2
+converting .... psi:   60 spin: 2
+converting .... psi:   61 spin: 2
+converting .... psi:   62 spin: 2
+converting .... psi:   63 spin: 2
+converting .... psi:   64 spin: 2
+converting .... psi:   65 spin: 2
+converting .... psi:   66 spin: 2
+converting .... psi:   67 spin: 2
+converting .... psi:   68 spin: 2
+converting .... psi:   69 spin: 2
+converting .... psi:   70 spin: 2
+converting .... psi:   71 spin: 2
+converting .... psi:   72 spin: 2
+converting .... psi:   73 spin: 2
+converting .... psi:   74 spin: 2
+converting .... psi:   75 spin: 2
+converting .... psi:   76 spin: 2
+converting .... psi:   77 spin: 2
+converting .... psi:   78 spin: 2
+converting .... psi:   79 spin: 2
+converting .... psi:   80 spin: 2
+converting .... psi:   81 spin: 2
+converting .... psi:   82 spin: 2
+converting .... psi:   83 spin: 2
+converting .... psi:   84 spin: 2
+converting .... psi:   85 spin: 2
+converting .... psi:   86 spin: 2
+converting .... psi:   87 spin: 2
+converting .... psi:   88 spin: 2
+converting .... psi:   89 spin: 2
+converting .... psi:   90 spin: 2
+converting .... psi:   91 spin: 2
+converting .... psi:   92 spin: 2
+converting .... psi:   93 spin: 2
+converting .... psi:   94 spin: 2
+converting .... psi:   95 spin: 2
+converting .... psi:   96 spin: 2
+converting .... psi:   97 spin: 2
+converting .... psi:   98 spin: 2
+converting .... psi:   99 spin: 2
+converting .... psi:  100 spin: 2
+converting .... psi:  101 spin: 2
+converting .... psi:  102 spin: 2
+converting .... psi:  103 spin: 2
+converting .... psi:  104 spin: 2
+converting .... psi:  105 spin: 2
+converting .... psi:  106 spin: 2
+converting .... psi:  107 spin: 2
+converting .... psi:  108 spin: 2
+converting .... psi:  109 spin: 2
+converting .... psi:  110 spin: 2
+converting .... psi:  111 spin: 2
+converting .... psi:  112 spin: 2
+converting .... psi:  113 spin: 2
+converting .... psi:  114 spin: 2
+converting .... psi:  115 spin: 2
+converting .... psi:  116 spin: 2
+converting .... psi:  117 spin: 2
+converting .... psi:  118 spin: 2
+converting .... psi:  119 spin: 2
+converting .... psi:  120 spin: 2
+converting .... psi:  121 spin: 2
+converting .... psi:  122 spin: 2
+converting .... psi:  123 spin: 2
+converting .... psi:  124 spin: 2
+converting .... psi:  125 spin: 2
+converting .... psi:  126 spin: 2
+converting .... psi:  127 spin: 2
+converting .... psi:  128 spin: 2
+converting .... psi:  129 spin: 2
+converting .... psi:  130 spin: 2
+converting .... psi:  131 spin: 2
+converting .... psi:  132 spin: 2
+converting .... psi:  133 spin: 2
+converting .... psi:  134 spin: 2
+converting .... psi:  135 spin: 2
+converting .... psi:  136 spin: 2
+converting .... psi:  137 spin: 2
+converting .... psi:  138 spin: 2
+converting .... psi:  139 spin: 2
+converting .... psi:  140 spin: 2
+converting .... psi:  141 spin: 2
+converting .... psi:  142 spin: 2
+converting .... psi:  143 spin: 2
+converting .... psi:  144 spin: 2
+converting .... psi:  145 spin: 2
+converting .... psi:  146 spin: 2
+converting .... psi:  147 spin: 2
+converting .... psi:  148 spin: 2
+converting .... psi:  149 spin: 2
+converting .... psi:  150 spin: 2
+converting .... psi:  151 spin: 2
+converting .... psi:  152 spin: 2
+converting .... psi:  153 spin: 2
+converting .... psi:  154 spin: 2
+converting .... psi:  155 spin: 2
+converting .... psi:  156 spin: 2
+converting .... psi:  157 spin: 2
+converting .... psi:  158 spin: 2
+converting .... psi:  159 spin: 2
+converting .... psi:  160 spin: 2
+converting .... psi:  161 spin: 2
+converting .... psi:  162 spin: 2
+converting .... psi:  163 spin: 2
+converting .... psi:  164 spin: 2
+converting .... psi:  165 spin: 2
+converting .... psi:  166 spin: 2
+converting .... psi:  167 spin: 2
+converting .... psi:  168 spin: 2
+converting .... psi:  169 spin: 2
+converting .... psi:  170 spin: 2
+converting .... psi:  171 spin: 2
+converting .... psi:  172 spin: 2
+converting .... psi:  173 spin: 2
+converting .... psi:  174 spin: 2
+converting .... psi:  175 spin: 2
+converting .... psi:  176 spin: 2
+converting .... psi:  177 spin: 2
+converting .... psi:  178 spin: 2
+converting .... psi:  179 spin: 2
+converting .... psi:  180 spin: 2
+converting .... psi:  181 spin: 2
+converting .... psi:  182 spin: 2
+converting .... psi:  183 spin: 2
+converting .... psi:  184 spin: 2
+converting .... psi:  185 spin: 2
+converting .... psi:  186 spin: 2
+converting .... psi:  187 spin: 2
+converting .... psi:  188 spin: 2
+converting .... psi:  189 spin: 2
+converting .... psi:  190 spin: 2
+converting .... psi:  191 spin: 2
+converting .... psi:  192 spin: 2
+converting .... psi:  193 spin: 2
+converting .... psi:  194 spin: 2
+converting .... psi:  195 spin: 2
+converting .... psi:  196 spin: 2
+converting .... psi:  197 spin: 2
+converting .... psi:  198 spin: 2
+converting .... psi:  199 spin: 2
+converting .... psi:  200 spin: 2
+converting .... psi:  201 spin: 2
+converting .... psi:  202 spin: 2
+converting .... psi:  203 spin: 2
+converting .... psi:  204 spin: 2
+converting .... psi:  205 spin: 2
+converting .... psi:  206 spin: 2
+converting .... psi:  207 spin: 2
+converting .... psi:  208 spin: 2
+converting .... psi:  209 spin: 2
+converting .... psi:  210 spin: 2
+converting .... psi:  211 spin: 2
+converting .... psi:  212 spin: 2
+converting .... psi:  213 spin: 2
+converting .... psi:  214 spin: 2
+converting .... psi:  215 spin: 2
+converting .... psi:  216 spin: 2
+converting .... psi:  217 spin: 2
+converting .... psi:  218 spin: 2
+converting .... psi:  219 spin: 2
+converting .... psi:  220 spin: 2
+converting .... psi:  221 spin: 2
+converting .... psi:  222 spin: 2
+converting .... psi:  223 spin: 2
+converting .... psi:  224 spin: 2
+converting .... psi:  225 spin: 2
+converting .... psi:  226 spin: 2
+converting .... psi:  227 spin: 2
+converting .... psi:  228 spin: 2
+converting .... psi:  229 spin: 2
+converting .... psi:  230 spin: 2
+converting .... psi:  231 spin: 2
+converting .... psi:  232 spin: 2
+converting .... psi:  233 spin: 2
+converting .... psi:  234 spin: 2
+converting .... psi:  235 spin: 2
+converting .... psi:  236 spin: 2
+converting .... psi:  237 spin: 2
+converting .... psi:  238 spin: 2
+converting .... psi:  239 spin: 2
+converting .... psi:  240 spin: 2
+converting .... psi:  241 spin: 2
+converting .... psi:  242 spin: 2
+converting .... psi:  243 spin: 2
+converting .... psi:  244 spin: 2
+converting .... psi:  245 spin: 2
+converting .... psi:  246 spin: 2
+converting .... psi:  247 spin: 2
+converting .... psi:  248 spin: 2
+converting .... psi:  249 spin: 2
+converting .... psi:  250 spin: 2
+converting .... psi:  251 spin: 2
+converting .... psi:  252 spin: 2
+converting .... psi:  253 spin: 2
+converting .... psi:  254 spin: 2
+converting .... psi:  255 spin: 2
+converting .... psi:  256 spin: 2
+converting .... psi:  257 spin: 2
+converting .... psi:  258 spin: 2
+
+ input psi filename:./perm/goethite_Lu82.movecs
+
+ Warning - K.S. orbitals are not orthonormal. Applying Gram-Schmidt orthonormalization.
+         - exact norm=0.521000E+03 norm=0.521000E+03 corrected norm=0.521000E+03 (error=0.230668E-07)
+
+
+ number of processors used:         8
+ processor grid           :   8 x   1
+ parallel mapping         :2d-hilbert
+ parallel mapping         :  balanced
+ number of threads        :         1
+ parallel io              :       off
+
+ options:
+      boundary conditions  = periodic    (version3)
+      electron spin        = unrestricted
+      exchange-correlation = PBE96 (White and Bird) parameterization
+
+ elements involved in the cluster:
+      1: Fe  valence charge:  8.0000  lmax=  2
+             comment    : Troullier-Martins pseudopotential
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   0
+             number of non-local projections:   8
+             semicore corrections included  :  0.800 (radius)  8.949 (charge)
+             cutoff =   2.292   2.835   2.292
+
+      2: H   valence charge:  1.0000  lmax=  1
+             comment    : Parameterized (Chem.Phys.Lett., vol 322, page 447) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   1
+             local potential used           :   1
+             number of non-local projections:   1
+             cutoff =   0.800   0.800
+
+      3: O   valence charge:  6.0000  lmax=  2
+             comment    : Parameterized (Chem.Phys.Lett., vol 322, page 447) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             cutoff =   0.700   0.700   0.700
+
+      4: Lu  valence charge:25.0  core charge:46.0
+             comment    : Parameterized Lu paw (4f5s5p5d5f6s6p projectors, 4/5/2022 by EJB)
+             pseudpotential type            :   4
+             loggrid parameter r0        : 0.200E-02
+             loggrid parameter rmax      : 0.250E+02
+             loggrid parameter npoints   :      3000
+             augmentation sphere radius  :     2.392 ( 2254 npoints 2254 per task)
+             compensation sigma          :     0.346
+             total number of projectors  :        27
+             n_ps (n) l          eig      #projector
+                4 (4) f    -0.386391               7
+                1 (5) s    -2.109986               1
+                2 (5) p    -1.185266               3
+                3 (5) d    -0.078758               5
+                5 (5) f     1.000000               7
+                2 (6) s    -0.168724               1
+                3 (6) p    -0.054943               3
+
+
+ total charge:   0.000
+
+ atomic composition:
+     Fe  :   23     H   :   24     O   :   48     Lu  :    1
+
+ number of electrons: spin up=   263 ( 263 per task)  down=   258 ( 258 per task) (Fourier space)
+ number of orbitals : spin up=   263 ( 263 per task)  down=   258 ( 258 per task) (Fourier space)
+
+ supercell:
+      cell_name:  cell_default                                      
+      lattice:    a1=<  19.023   0.000   0.000 >
+                  a2=<   0.000  17.301   0.000 >
+                  a3=<   0.000   0.000  17.393 >
+      reciprocal: b1=<   0.330   0.000  -0.000 >
+                  b2=<  -0.000   0.363  -0.000 >
+                  b3=<   0.000   0.000   0.361 >
+      lattice:    a=      19.023 b=     17.301 c=      17.393
+                  alpha=  90.000 beta=  90.000 gamma=  90.000
+                  omega=      5724.4
+
+      density cutoff=120.000  fft= 96x 90x 90(   179737 waves    22467 per task)
+      wavefnc cutoff= 60.000  fft= 96x 90x 90(    63530 waves     7941 per task)
+      paw integration: xc lmax=  0 compensation charge= two-electron Gaussian
+      Ewald summation: cut radius=    3.50  and  8
+                       Madelung Wigner-Seitz=    1.75499096 (alpha=    2.82903130 rs=11.09723364)
+
+ technical parameters:
+      time step=      1.00     fictitious mass=  400000.0
+      tolerance=0.100E-06 (energy)   0.100E-06 (density)
+      maximum iterations =       100 (   10 inner     10 outer )
+
+
+
+
+
+== Energy Calculation ==
+
+
+          ====== Grassmann conjugate gradient iteration ======
+     >>>  ITERATION STARTED AT Tue Jan 24 11:43:28 2023  <<<
+    iter.           Energy         DeltaE       DeltaRho 
+    ------------------------------------------------------
+      10   -0.1959369983E+04   -0.65236E-02    0.13982E-03
+     -  10 steepest descent iterations performed
+      20   -0.1959954838E+04   -0.73863E-02    0.34784E-04
+     -  10 steepest descent iterations performed
+      30   -0.1960116726E+04   -0.10590E-01    0.43962E-04
+     -  10 steepest descent iterations performed
+      40   -0.1960532906E+04   -0.23562E-01    0.28467E-03
+     -  10 steepest descent iterations performed
+      50   -0.1960979626E+04   -0.35218E-01    0.22716E-03
+     -  10 steepest descent iterations performed
+      60   -0.1961100273E+04   -0.94080E-02    0.75454E-04
+      70   -0.1961184676E+04   -0.89667E-02    0.32799E-04
+      80   -0.1961261815E+04   -0.79926E-02    0.45915E-04
+      90   -0.1961405353E+04   -0.39045E-02    0.45585E-04
+     100   -0.1961488493E+04   -0.84692E-02    0.18975E-03
+ *** arrived at the Maximum iteration.  terminated
+     >>>  ITERATION ENDED   AT Tue Jan 24 13:17:59 2023  <<<
+
+
+==  Summary Of Results  ==
+
+ number of electrons: spin up=  263.00000  down=  258.00000 (real space)
+     plane-wave part:           258.05501         253.06206 (real space)
+      augmented part:             4.94499           4.93794 (real space)
+
+ total     energy    :  -0.1961488493E+04 (   -0.20432E+02/ion)
+
+ total paw energy    :  -0.1603576699E+05 (   -0.16704E+03/ion)
+ total orbital energy:   0.9591560401E+01 (    0.18410E-01/electron)
+ hartree   energy    :   0.3355884020E+03 (    0.64412E+00/electron)
+ exc-corr  energy    :  -0.5023750972E+03 (   -0.96425E+00/electron)
+ ion-ion   energy    :  -0.1123723142E+04 (   -0.11705E+02/ion)
+
+ kinetic (planewave) :   0.1169834356E+04 (    0.22454E+01/electron)
+ V_local (planewave) :  -0.7666116515E+03 (   -0.14714E+01/electron)
+ V_nl    (planewave) :  -0.7404366906E+03 (   -0.14212E+01/electron)
+ V_Coul  (planewave) :   0.6711768040E+03 (    0.12882E+01/electron)
+ V_xc.   (planewave) :  -0.3904365016E+03 (   -0.74940E+00/electron)
+ Virial Coefficient  :  -0.1048274940E+01
+
+ kinetic (loc. basis):   0.4615662243E+03 (    0.88592E+00/electron)
+ kinetic       (core):   0.1428099103E+05 (    0.14876E+03/ion)
+ valence-core        :  -0.1358355692E+03 (   -0.26072E+00/electron)
+ ncmp*V_local        :  -0.4988491436E+03 (   -0.95748E+00/electron)
+ V_lpaw  (loc. basis):  -0.3434135152E+02 (   -0.65914E-01/electron)
+ coulomb (loc. basis):  -0.2934762432E+02 (   -0.56329E-01/electron)
+ coulomb  (ncmp-ncmp):   0.1048128715E+03 (    0.20118E+00/electron)
+ coulomb    (ncmp-pw):   0.6606524422E+02 (    0.12680E+00/electron)
+ exc-cor (loc. basis):  -0.2888292942E+03 (   -0.55437E+00/electron)
+ pxc-cor (loc. basis):  -0.3052987197E+02 (   -0.31802E+00/electron)
+ ion-core            :  -0.2835526953E+05 (   -0.29537E+03/ion)
+
+ orbital energies:
+     0.3127704E+00 (   8.511eV)
+     0.3078213E+00 (   8.376eV)
+     0.3063938E+00 (   8.337eV)
+     0.2981594E+00 (   8.113eV)
+     0.2960341E+00 (   8.056eV)
+     0.2885193E+00 (   7.851eV)     0.3194058E+00 (   8.692eV)
+     0.2856764E+00 (   7.774eV)     0.3091972E+00 (   8.414eV)
+     0.2824536E+00 (   7.686eV)     0.3074672E+00 (   8.367eV)
+     0.2772251E+00 (   7.544eV)     0.3043504E+00 (   8.282eV)
+     0.2731488E+00 (   7.433eV)     0.2952849E+00 (   8.035eV)
+     0.2706140E+00 (   7.364eV)     0.2948281E+00 (   8.023eV)
+     0.2690268E+00 (   7.321eV)     0.2892300E+00 (   7.870eV)
+     0.2678148E+00 (   7.288eV)     0.2834775E+00 (   7.714eV)
+     0.2672616E+00 (   7.273eV)     0.2810721E+00 (   7.648eV)
+     0.2652262E+00 (   7.217eV)     0.2782620E+00 (   7.572eV)
+     0.2632983E+00 (   7.165eV)     0.2758725E+00 (   7.507eV)
+     0.2618169E+00 (   7.124eV)     0.2750564E+00 (   7.485eV)
+     0.2604272E+00 (   7.087eV)     0.2714296E+00 (   7.386eV)
+     0.2602586E+00 (   7.082eV)     0.2711289E+00 (   7.378eV)
+     0.2587162E+00 (   7.040eV)     0.2706705E+00 (   7.365eV)
+     0.2580923E+00 (   7.023eV)     0.2679256E+00 (   7.291eV)
+     0.2573195E+00 (   7.002eV)     0.2662917E+00 (   7.246eV)
+     0.2557366E+00 (   6.959eV)     0.2653446E+00 (   7.220eV)
+     0.2554072E+00 (   6.950eV)     0.2649942E+00 (   7.211eV)
+     0.2545595E+00 (   6.927eV)     0.2635982E+00 (   7.173eV)
+     0.2530116E+00 (   6.885eV)     0.2623523E+00 (   7.139eV)
+     0.2525860E+00 (   6.873eV)     0.2617655E+00 (   7.123eV)
+     0.2502630E+00 (   6.810eV)     0.2611998E+00 (   7.108eV)
+     0.2497077E+00 (   6.795eV)     0.2591635E+00 (   7.052eV)
+     0.2494567E+00 (   6.788eV)     0.2576084E+00 (   7.010eV)
+     0.2486321E+00 (   6.766eV)     0.2568094E+00 (   6.988eV)
+     0.2466176E+00 (   6.711eV)     0.2560033E+00 (   6.966eV)
+     0.2458473E+00 (   6.690eV)     0.2547618E+00 (   6.932eV)
+     0.2452006E+00 (   6.672eV)     0.2531315E+00 (   6.888eV)
+     0.2446573E+00 (   6.658eV)     0.2518741E+00 (   6.854eV)
+     0.2440372E+00 (   6.641eV)     0.2516852E+00 (   6.849eV)
+     0.2429118E+00 (   6.610eV)     0.2502183E+00 (   6.809eV)
+     0.2412723E+00 (   6.565eV)     0.2496857E+00 (   6.794eV)
+     0.2402814E+00 (   6.538eV)     0.2489460E+00 (   6.774eV)
+     0.2389697E+00 (   6.503eV)     0.2472575E+00 (   6.728eV)
+     0.2381937E+00 (   6.482eV)     0.2466248E+00 (   6.711eV)
+     0.2378830E+00 (   6.473eV)     0.2461755E+00 (   6.699eV)
+     0.2363315E+00 (   6.431eV)     0.2456988E+00 (   6.686eV)
+     0.2354907E+00 (   6.408eV)     0.2448359E+00 (   6.662eV)
+     0.2346555E+00 (   6.385eV)     0.2432690E+00 (   6.620eV)
+     0.2343464E+00 (   6.377eV)     0.2424035E+00 (   6.596eV)
+     0.2328507E+00 (   6.336eV)     0.2415478E+00 (   6.573eV)
+     0.2325357E+00 (   6.328eV)     0.2411067E+00 (   6.561eV)
+     0.2312836E+00 (   6.294eV)     0.2407870E+00 (   6.552eV)
+     0.2307878E+00 (   6.280eV)     0.2391452E+00 (   6.508eV)
+     0.2304184E+00 (   6.270eV)     0.2388990E+00 (   6.501eV)
+     0.2299824E+00 (   6.258eV)     0.2375469E+00 (   6.464eV)
+     0.2284018E+00 (   6.215eV)     0.2373999E+00 (   6.460eV)
+     0.2276776E+00 (   6.195eV)     0.2367301E+00 (   6.442eV)
+     0.2262037E+00 (   6.155eV)     0.2354727E+00 (   6.408eV)
+     0.2252397E+00 (   6.129eV)     0.2345690E+00 (   6.383eV)
+     0.2241782E+00 (   6.100eV)     0.2334253E+00 (   6.352eV)
+     0.2203658E+00 (   5.997eV)     0.2329887E+00 (   6.340eV)
+     0.2195603E+00 (   5.975eV)     0.2317198E+00 (   6.305eV)
+     0.2186967E+00 (   5.951eV)     0.2271157E+00 (   6.180eV)
+     0.2081673E+00 (   5.665eV)     0.2118058E+00 (   5.764eV)
+     0.2060325E+00 (   5.606eV)     0.2083838E+00 (   5.670eV)
+     0.2053610E+00 (   5.588eV)     0.2075472E+00 (   5.648eV)
+     0.1936206E+00 (   5.269eV)     0.1970576E+00 (   5.362eV)
+     0.1907412E+00 (   5.190eV)     0.1955543E+00 (   5.321eV)
+     0.1899470E+00 (   5.169eV)     0.1916452E+00 (   5.215eV)
+     0.1895959E+00 (   5.159eV)     0.1903878E+00 (   5.181eV)
+     0.1890220E+00 (   5.144eV)     0.1900677E+00 (   5.172eV)
+     0.1854841E+00 (   5.047eV)     0.1857010E+00 (   5.053eV)
+     0.1835391E+00 (   4.994eV)     0.1833319E+00 (   4.989eV)
+     0.1784858E+00 (   4.857eV)     0.1804348E+00 (   4.910eV)
+     0.1780135E+00 (   4.844eV)     0.1786080E+00 (   4.860eV)
+     0.1762235E+00 (   4.795eV)     0.1736292E+00 (   4.725eV)
+     0.1706052E+00 (   4.642eV)     0.1726356E+00 (   4.698eV)
+     0.1696975E+00 (   4.618eV)     0.1706241E+00 (   4.643eV)
+     0.1684058E+00 (   4.583eV)     0.1662401E+00 (   4.524eV)
+     0.1614418E+00 (   4.393eV)     0.1626446E+00 (   4.426eV)
+     0.1597251E+00 (   4.346eV)     0.1618597E+00 (   4.404eV)
+     0.1585286E+00 (   4.314eV)     0.1606665E+00 (   4.372eV)
+     0.1580590E+00 (   4.301eV)     0.1604721E+00 (   4.367eV)
+     0.1571801E+00 (   4.277eV)     0.1586184E+00 (   4.316eV)
+     0.1564137E+00 (   4.256eV)     0.1574563E+00 (   4.285eV)
+     0.1543878E+00 (   4.201eV)     0.1566476E+00 (   4.263eV)
+     0.1543145E+00 (   4.199eV)     0.1554663E+00 (   4.230eV)
+     0.1526215E+00 (   4.153eV)     0.1548510E+00 (   4.214eV)
+     0.1523192E+00 (   4.145eV)     0.1541853E+00 (   4.196eV)
+     0.1514102E+00 (   4.120eV)     0.1532468E+00 (   4.170eV)
+     0.1506575E+00 (   4.100eV)     0.1527387E+00 (   4.156eV)
+     0.1502802E+00 (   4.089eV)     0.1522918E+00 (   4.144eV)
+     0.1483725E+00 (   4.037eV)     0.1516873E+00 (   4.128eV)
+     0.1477372E+00 (   4.020eV)     0.1493470E+00 (   4.064eV)
+     0.1467969E+00 (   3.995eV)     0.1485823E+00 (   4.043eV)
+     0.1462555E+00 (   3.980eV)     0.1484781E+00 (   4.040eV)
+     0.1454725E+00 (   3.959eV)     0.1477073E+00 (   4.019eV)
+     0.1452581E+00 (   3.953eV)     0.1464951E+00 (   3.986eV)
+     0.1447246E+00 (   3.938eV)     0.1460666E+00 (   3.975eV)
+     0.1428937E+00 (   3.888eV)     0.1441962E+00 (   3.924eV)
+     0.1416518E+00 (   3.855eV)     0.1437508E+00 (   3.912eV)
+     0.1412385E+00 (   3.843eV)     0.1427446E+00 (   3.884eV)
+     0.1406575E+00 (   3.828eV)     0.1422031E+00 (   3.870eV)
+     0.1396133E+00 (   3.799eV)     0.1402587E+00 (   3.817eV)
+     0.1387016E+00 (   3.774eV)     0.1401597E+00 (   3.814eV)
+     0.1380499E+00 (   3.757eV)     0.1389612E+00 (   3.781eV)
+     0.1370316E+00 (   3.729eV)     0.1386311E+00 (   3.772eV)
+     0.1364049E+00 (   3.712eV)     0.1374727E+00 (   3.741eV)
+     0.1355229E+00 (   3.688eV)     0.1371710E+00 (   3.733eV)
+     0.1341782E+00 (   3.651eV)     0.1354283E+00 (   3.685eV)
+     0.1326395E+00 (   3.609eV)     0.1342187E+00 (   3.652eV)
+     0.1317991E+00 (   3.586eV)     0.1328722E+00 (   3.616eV)
+     0.1276868E+00 (   3.475eV)     0.1283538E+00 (   3.493eV)
+     0.1253554E+00 (   3.411eV)     0.1271031E+00 (   3.459eV)
+     0.1249547E+00 (   3.400eV)     0.1259912E+00 (   3.428eV)
+     0.1241544E+00 (   3.378eV)     0.1254418E+00 (   3.413eV)
+     0.1233417E+00 (   3.356eV)     0.1244240E+00 (   3.386eV)
+     0.1225485E+00 (   3.335eV)     0.1237754E+00 (   3.368eV)
+     0.1214521E+00 (   3.305eV)     0.1230105E+00 (   3.347eV)
+     0.1196302E+00 (   3.255eV)     0.1205342E+00 (   3.280eV)
+     0.1152995E+00 (   3.137eV)     0.1168333E+00 (   3.179eV)
+     0.1147641E+00 (   3.123eV)     0.1162026E+00 (   3.162eV)
+     0.1140022E+00 (   3.102eV)     0.1153334E+00 (   3.138eV)
+     0.1129637E+00 (   3.074eV)     0.1137753E+00 (   3.096eV)
+     0.1109054E+00 (   3.018eV)     0.1123973E+00 (   3.059eV)
+     0.1101838E+00 (   2.998eV)     0.1117684E+00 (   3.041eV)
+     0.1093589E+00 (   2.976eV)     0.1112098E+00 (   3.026eV)
+     0.1090516E+00 (   2.967eV)     0.1101063E+00 (   2.996eV)
+     0.1079785E+00 (   2.938eV)     0.1095232E+00 (   2.980eV)
+     0.1077059E+00 (   2.931eV)     0.1093273E+00 (   2.975eV)
+     0.1067093E+00 (   2.904eV)     0.1085101E+00 (   2.953eV)
+     0.1063275E+00 (   2.893eV)     0.1081892E+00 (   2.944eV)
+     0.1057460E+00 (   2.878eV)     0.1079861E+00 (   2.938eV)
+     0.1056661E+00 (   2.875eV)     0.1066414E+00 (   2.902eV)
+     0.1053337E+00 (   2.866eV)     0.1064518E+00 (   2.897eV)
+     0.1051668E+00 (   2.862eV)     0.1062461E+00 (   2.891eV)
+     0.1045674E+00 (   2.845eV)     0.1057360E+00 (   2.877eV)
+     0.1044433E+00 (   2.842eV)     0.1053990E+00 (   2.868eV)
+     0.1041640E+00 (   2.834eV)     0.1051166E+00 (   2.860eV)
+     0.1036603E+00 (   2.821eV)     0.1046915E+00 (   2.849eV)
+     0.1030423E+00 (   2.804eV)     0.1042891E+00 (   2.838eV)
+     0.1028573E+00 (   2.799eV)     0.1037068E+00 (   2.822eV)
+     0.1021887E+00 (   2.781eV)     0.1032871E+00 (   2.811eV)
+     0.1018263E+00 (   2.771eV)     0.1031597E+00 (   2.807eV)
+     0.1011044E+00 (   2.751eV)     0.1027455E+00 (   2.796eV)
+     0.9931187E-01 (   2.702eV)     0.1005500E+00 (   2.736eV)
+     0.9578515E-01 (   2.606eV)     0.9747313E-01 (   2.652eV)
+     0.9544281E-01 (   2.597eV)     0.9690588E-01 (   2.637eV)
+     0.9465284E-01 (   2.576eV)     0.9608980E-01 (   2.615eV)
+     0.9389540E-01 (   2.555eV)     0.9551944E-01 (   2.599eV)
+     0.9358406E-01 (   2.547eV)     0.9496046E-01 (   2.584eV)
+     0.9230406E-01 (   2.512eV)     0.9409809E-01 (   2.561eV)
+     0.9209468E-01 (   2.506eV)     0.9390263E-01 (   2.555eV)
+     0.9194318E-01 (   2.502eV)     0.9355982E-01 (   2.546eV)
+     0.9110418E-01 (   2.479eV)     0.9314465E-01 (   2.535eV)
+     0.9086474E-01 (   2.473eV)     0.9240330E-01 (   2.514eV)
+     0.9040069E-01 (   2.460eV)     0.9194894E-01 (   2.502eV)
+     0.8998202E-01 (   2.449eV)     0.9152748E-01 (   2.491eV)
+     0.8960345E-01 (   2.438eV)     0.9110312E-01 (   2.479eV)
+     0.8937378E-01 (   2.432eV)     0.9050159E-01 (   2.463eV)
+     0.8873010E-01 (   2.414eV)     0.8983314E-01 (   2.445eV)
+     0.8723303E-01 (   2.374eV)     0.8889333E-01 (   2.419eV)
+     0.8600360E-01 (   2.340eV)     0.8788648E-01 (   2.392eV)
+     0.8407593E-01 (   2.288eV)     0.8679054E-01 (   2.362eV)
+     0.8311764E-01 (   2.262eV)     0.8568684E-01 (   2.332eV)
+     0.7805513E-01 (   2.124eV)     0.7953052E-01 (   2.164eV)
+     0.7730270E-01 (   2.104eV)     0.7932082E-01 (   2.158eV)
+     0.7540458E-01 (   2.052eV)     0.7757064E-01 (   2.111eV)
+     0.7471423E-01 (   2.033eV)     0.7656669E-01 (   2.084eV)
+     0.7360147E-01 (   2.003eV)     0.7496336E-01 (   2.040eV)
+     0.7269002E-01 (   1.978eV)     0.7418555E-01 (   2.019eV)
+     0.7203176E-01 (   1.960eV)     0.7282708E-01 (   1.982eV)
+     0.7050372E-01 (   1.919eV)     0.7196538E-01 (   1.958eV)
+     0.6934214E-01 (   1.887eV)     0.7058161E-01 (   1.921eV)
+     0.6830451E-01 (   1.859eV)     0.6894209E-01 (   1.876eV)
+     0.6578870E-01 (   1.790eV)     0.6687831E-01 (   1.820eV)
+     0.6544532E-01 (   1.781eV)     0.6616795E-01 (   1.801eV)
+     0.6294999E-01 (   1.713eV)     0.6449291E-01 (   1.755eV)
+     0.6228974E-01 (   1.695eV)     0.6359129E-01 (   1.730eV)
+     0.6206165E-01 (   1.689eV)     0.6282072E-01 (   1.709eV)
+     0.6097451E-01 (   1.659eV)     0.6227987E-01 (   1.695eV)
+     0.5366088E-01 (   1.460eV)     0.5473322E-01 (   1.489eV)
+     0.5319697E-01 (   1.448eV)     0.5416857E-01 (   1.474eV)
+     0.5272711E-01 (   1.435eV)     0.5377236E-01 (   1.463eV)
+     0.5100793E-01 (   1.388eV)     0.5214468E-01 (   1.419eV)
+     0.5063552E-01 (   1.378eV)     0.5173207E-01 (   1.408eV)
+     0.4971722E-01 (   1.353eV)     0.5040174E-01 (   1.372eV)
+     0.4045910E-01 (   1.101eV)     0.4210846E-01 (   1.146eV)
+     0.3942720E-01 (   1.073eV)     0.4094162E-01 (   1.114eV)
+     0.3528032E-01 (   0.960eV)     0.3664984E-01 (   0.997eV)
+     0.1382569E-01 (   0.376eV)     0.1499803E-01 (   0.408eV)
+     0.1086116E-01 (   0.296eV)     0.1169447E-01 (   0.318eV)
+     0.9544605E-02 (   0.260eV)     0.1027124E-01 (   0.279eV)
+     0.6099344E-02 (   0.166eV)     0.6723412E-02 (   0.183eV)
+     0.5493174E-02 (   0.149eV)     0.6439142E-02 (   0.175eV)
+     0.5206398E-02 (   0.142eV)     0.5983183E-02 (   0.163eV)
+     0.4849031E-02 (   0.132eV)     0.5399263E-02 (   0.147eV)
+     0.2642399E-02 (   0.072eV)     0.3459768E-02 (   0.094eV)
+    -0.4308933E-02 (  -0.117eV)    -0.3560538E-02 (  -0.097eV)
+    -0.4716059E-02 (  -0.128eV)    -0.4109578E-02 (  -0.112eV)
+    -0.6410083E-02 (  -0.174eV)    -0.5528235E-02 (  -0.150eV)
+    -0.7027627E-02 (  -0.191eV)    -0.6201437E-02 (  -0.169eV)
+    -0.2515535E-01 (  -0.685eV)    -0.2451959E-01 (  -0.667eV)
+    -0.2597348E-01 (  -0.707eV)    -0.2545379E-01 (  -0.693eV)
+    -0.2724392E-01 (  -0.741eV)    -0.2675608E-01 (  -0.728eV)
+    -0.2770178E-01 (  -0.754eV)    -0.2710618E-01 (  -0.738eV)
+    -0.2852759E-01 (  -0.776eV)    -0.2792336E-01 (  -0.760eV)
+    -0.3039242E-01 (  -0.827eV)    -0.2957410E-01 (  -0.805eV)
+    -0.3352832E-01 (  -0.912eV)    -0.3287307E-01 (  -0.895eV)
+    -0.3425207E-01 (  -0.932eV)    -0.3371094E-01 (  -0.917eV)
+    -0.3742191E-01 (  -1.018eV)    -0.3683024E-01 (  -1.002eV)
+    -0.3760566E-01 (  -1.023eV)    -0.3704196E-01 (  -1.008eV)
+    -0.4629085E-01 (  -1.260eV)    -0.4575369E-01 (  -1.245eV)
+    -0.5822689E-01 (  -1.584eV)    -0.5755339E-01 (  -1.566eV)
+    -0.3577294E+00 (  -9.734eV)    -0.3583588E+00 (  -9.752eV)
+    -0.3669118E+00 (  -9.984eV)    -0.3656870E+00 (  -9.951eV)
+    -0.3765403E+00 ( -10.246eV)    -0.3759720E+00 ( -10.231eV)
+    -0.3865169E+00 ( -10.518eV)    -0.3852917E+00 ( -10.484eV)
+    -0.3877953E+00 ( -10.553eV)    -0.3867107E+00 ( -10.523eV)
+    -0.3893448E+00 ( -10.595eV)    -0.3889508E+00 ( -10.584eV)
+    -0.3900345E+00 ( -10.613eV)    -0.3896838E+00 ( -10.604eV)
+    -0.3902216E+00 ( -10.619eV)    -0.3900214E+00 ( -10.613eV)
+    -0.3931031E+00 ( -10.697eV)    -0.3921897E+00 ( -10.672eV)
+    -0.3941200E+00 ( -10.725eV)    -0.3933507E+00 ( -10.704eV)
+    -0.3943638E+00 ( -10.731eV)    -0.3936521E+00 ( -10.712eV)
+    -0.3947263E+00 ( -10.741eV)    -0.3943014E+00 ( -10.730eV)
+    -0.3953370E+00 ( -10.758eV)    -0.3947923E+00 ( -10.743eV)
+    -0.3957363E+00 ( -10.769eV)    -0.3956662E+00 ( -10.767eV)
+    -0.3964773E+00 ( -10.789eV)    -0.3958868E+00 ( -10.773eV)
+    -0.3967741E+00 ( -10.797eV)    -0.3971008E+00 ( -10.806eV)
+    -0.3987009E+00 ( -10.849eV)    -0.3977941E+00 ( -10.825eV)
+    -0.3990832E+00 ( -10.860eV)    -0.3987926E+00 ( -10.852eV)
+    -0.4001161E+00 ( -10.888eV)    -0.3999265E+00 ( -10.883eV)
+    -0.4009846E+00 ( -10.911eV)    -0.4005680E+00 ( -10.900eV)
+    -0.4016717E+00 ( -10.930eV)    -0.4016244E+00 ( -10.929eV)
+    -0.4037068E+00 ( -10.986eV)    -0.4035705E+00 ( -10.982eV)
+    -0.4046577E+00 ( -11.011eV)    -0.4043300E+00 ( -11.002eV)
+    -0.4072975E+00 ( -11.083eV)    -0.4070960E+00 ( -11.078eV)
+    -0.4486821E+00 ( -12.209eV)    -0.4482131E+00 ( -12.197eV)
+    -0.4496748E+00 ( -12.236eV)    -0.4489827E+00 ( -12.218eV)
+    -0.4504123E+00 ( -12.256eV)    -0.4500169E+00 ( -12.246eV)
+    -0.4507284E+00 ( -12.265eV)    -0.4505629E+00 ( -12.261eV)
+    -0.4512507E+00 ( -12.279eV)    -0.4509047E+00 ( -12.270eV)
+    -0.4526632E+00 ( -12.318eV)    -0.4523712E+00 ( -12.310eV)
+    -0.4529274E+00 ( -12.325eV)    -0.4528295E+00 ( -12.322eV)
+    -0.4541318E+00 ( -12.358eV)    -0.4535145E+00 ( -12.341eV)
+    -0.4556812E+00 ( -12.400eV)    -0.4554266E+00 ( -12.393eV)
+    -0.4562222E+00 ( -12.415eV)    -0.4559421E+00 ( -12.407eV)
+    -0.4567878E+00 ( -12.430eV)    -0.4564419E+00 ( -12.421eV)
+    -0.4576709E+00 ( -12.454eV)    -0.4574829E+00 ( -12.449eV)
+    -0.4584886E+00 ( -12.476eV)    -0.4581537E+00 ( -12.467eV)
+    -0.4587125E+00 ( -12.482eV)    -0.4585126E+00 ( -12.477eV)
+    -0.4591202E+00 ( -12.493eV)    -0.4588117E+00 ( -12.485eV)
+    -0.4595380E+00 ( -12.505eV)    -0.4591876E+00 ( -12.495eV)
+    -0.4626009E+00 ( -12.588eV)    -0.4623485E+00 ( -12.581eV)
+    -0.4631717E+00 ( -12.604eV)    -0.4628283E+00 ( -12.594eV)
+    -0.4663044E+00 ( -12.689eV)    -0.4660703E+00 ( -12.683eV)
+    -0.4667679E+00 ( -12.702eV)    -0.4664286E+00 ( -12.692eV)
+    -0.4676903E+00 ( -12.727eV)    -0.4674555E+00 ( -12.720eV)
+    -0.4685332E+00 ( -12.750eV)    -0.4685650E+00 ( -12.750eV)
+    -0.4753807E+00 ( -12.936eV)    -0.4751444E+00 ( -12.929eV)
+    -0.4842320E+00 ( -13.177eV)    -0.4839324E+00 ( -13.169eV)
+    -0.5717797E+00 ( -15.559eV)    -0.5716094E+00 ( -15.554eV)
+    -0.5795898E+00 ( -15.772eV)    -0.5794911E+00 ( -15.769eV)
+    -0.5800821E+00 ( -15.785eV)    -0.5799876E+00 ( -15.782eV)
+    -0.2291817E+01 ( -62.364eV)    -0.2291760E+01 ( -62.362eV)
+
+ Total PSPW energy     :  -0.1961488493E+04
+
+
+=== Spin Contamination ===
+
+ <Sexact^2> =    8.7500000000000000     
+ <S^2>      =    25.811307455757941     
+
+
+
+== Center of Charge ==
+
+spin up     (    0.1009,   -0.0801,    0.0326 )
+spin down   (    0.0643,   -0.0788,    0.0308 )
+     total  (    0.0828,   -0.0795,    0.0317 )
+ionic       (    0.2192,   -0.2352,    0.2694 )
+
+
+== Molecular Dipole wrt Center of Mass ==
+
+mu   =  (   71.1014,  -81.1458,  123.8188 ) au
+|mu| =   164.2289 au,     417.4042 Debye
+
+ output psi filename:./perm/goethite_Lu82.movecs
+
+ Writing Crystallographic Information File:./perm/goethite_Lu82_paw.cif
+   - cell not shifted (nwpw:cif_shift_cell .false.)
+
+
+== Timing ==
+
+cputime in seconds
+  prologue    :   0.283692E+02
+  main loop   :   0.567200E+04
+  epilogue    :   0.567794E+01
+  total       :   0.570605E+04
+  cputime/step:   0.896051E+01       (     633 evalulations,     100 linesearches)
+
+
+Time spent doing                        total          step       percent
+  total time                 :   0.570605E+04  0.901430E+01       100.0 %
+  i/o time                   :   0.242260E+02  0.382718E-01         0.4 %
+  FFTs                       :   0.156095E+02  0.246596E-01         0.3 %
+  dot products               :   0.196279E+04  0.310077E+01        34.4 %
+  geodesic                   :   0.198976E+04  0.314338E+01        34.9 %
+  ffm_dgemm                  :   0.111171E+03  0.175625E+00         1.9 %
+  fmf_dgemm                  :   0.587060E+03  0.927424E+00        10.3 %
+  mmm_dgemm                  :   0.257061E+02  0.406100E-01         0.5 %
+  m_diagonalize              :   0.455581E+01  0.719717E-02         0.1 %
+    - m_tredq                :   0.172859E+00  0.273079E-03         0.0 %
+  exchange correlation       :   0.280657E+02  0.443376E-01         0.5 %
+  local pseudopotentials     :   0.494410E-01  0.781058E-04         0.0 %
+  non-local pseudopotentials :   0.255564E+04  0.403734E+01        44.8 %
+  hartree potentials         :   0.164339E+00  0.259620E-03         0.0 %
+  ion-ion interaction        :   0.219854E+02  0.347321E-01         0.4 %
+  structure factors          :   0.249547E+01  0.394229E-02         0.0 %
+  phase factors              :   0.146000E-03  0.230648E-06         0.0 %
+  masking and packing        :   0.168162E+03  0.265659E+00         2.9 %
+  queue fft                  :   0.721325E+03  0.113953E+01        12.6 %
+  queue fft (serial)         :   0.312169E+03  0.493157E+00         5.5 %
+  queue fft (message passing):   0.392182E+03  0.619561E+00         6.9 %
+  paw gaussian integrals     :   0.426000E-03  0.672986E-06         0.0 %
+  paw atomic coulomb         :   0.202984E+02  0.320669E-01         0.4 %
+  paw atomic xc              :   0.464522E+01  0.733842E-02         0.1 %
+  paw gen dEmult/dQlm        :   0.105356E-01  0.166439E-04         0.0 %
+  paw gen dElocal/dQlm       :   0.117160E-01  0.185087E-04         0.0 %
+  paw cmp operations         :   0.117160E-01  0.185087E-04         0.0 %
+  nwpw_ugauss                :   0.100300E-05  0.158452E-08         0.0 %
+  nwpw_gaunt                 :   0.448727E+01  0.708890E-02         0.1 %
+  non-local psp FFM          :   0.560334E+03  0.885204E+00         9.8 %
+  non-local psp FMF          :   0.170634E+04  0.269563E+01        29.9 %
+  non-local psp FFM A        :   0.155713E+01  0.245993E-02         0.0 %
+  non-local psp FFM B        :   0.551273E+03  0.870889E+00         9.7 %
+
+     >>>  JOB COMPLETED     AT Tue Jan 24 13:18:06 2023  <<<
+
+ Task  times  cpu:    19053.1s     wall:    19053.1s
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+ Summary of allocated global arrays
+-----------------------------------
+  No active global arrays
+
+
+MA_summarize_allocated_blocks: starting scan ...
+MA_summarize_allocated_blocks: scan completed: 0 heap blocks, 0 stack blocks
+MA usage statistics:
+
+	allocation statistics:
+					      heap	     stack
+					      ----	     -----
+	current number of blocks	         0	         0
+	maximum number of blocks	       394	        19
+	current total bytes		         0	         0
+	maximum total bytes		1074809184	  86923048
+	maximum total K-bytes		   1074810	     86924
+	maximum total M-bytes		      1075	        87
+
+
+                                     CITATION
+                                     --------
+                Please cite the following reference when publishing
+                           results obtained with NWChem:
+
+          E. Apra, E. J. Bylaska, W. A. de Jong, N. Govind, K. Kowalski,
+       T. P. Straatsma, M. Valiev, H. J. J. van Dam, Y. Alexeev, J. Anchell,
+       V. Anisimov, F. W. Aquino, R. Atta-Fynn, J. Autschbach, N. P. Bauman,
+     J. C. Becca, D. E. Bernholdt, K. Bhaskaran-Nair, S. Bogatko, P. Borowski,
+         J. Boschen, J. Brabec, A. Bruner, E. Cauet, Y. Chen, G. N. Chuev,
+      C. J. Cramer, J. Daily, M. J. O. Deegan, T. H. Dunning Jr., M. Dupuis,
+   K. G. Dyall, G. I. Fann, S. A. Fischer, A. Fonari, H. Fruchtl, L. Gagliardi,
+      J. Garza, N. Gawande, S. Ghosh, K. Glaesemann, A. W. Gotz, J. Hammond,
+       V. Helms, E. D. Hermes, K. Hirao, S. Hirata, M. Jacquelin, L. Jensen,
+   B. G. Johnson, H. Jonsson, R. A. Kendall, M. Klemm, R. Kobayashi, V. Konkov,
+      S. Krishnamoorthy, M. Krishnan, Z. Lin, R. D. Lins, R. J. Littlefield,
+      A. J. Logsdail, K. Lopata, W. Ma, A. V. Marenich, J. Martin del Campo,
+   D. Mejia-Rodriguez, J. E. Moore, J. M. Mullin, T. Nakajima, D. R. Nascimento,
+    J. A. Nichols, P. J. Nichols, J. Nieplocha, A. Otero-de-la-Roza, B. Palmer,
+    A. Panyala, T. Pirojsirikul, B. Peng, R. Peverati, J. Pittner, L. Pollack,
+   R. M. Richard, P. Sadayappan, G. C. Schatz, W. A. Shelton, D. W. Silverstein,
+   D. M. A. Smith, T. A. Soares, D. Song, M. Swart, H. L. Taylor, G. S. Thomas,
+            V. Tipparaju, D. G. Truhlar, K. Tsemekhman, T. Van Voorhis,
+      A. Vazquez-Mayagoitia, P. Verma, O. Villa, A. Vishnu, K. D. Vogiatzis,
+        D. Wang, J. H. Weare, M. J. Williamson, T. L. Windus, K. Wolinski,
+        A. T. Wong, Q. Wu, C. Yang, Q. Yu, M. Zacharias, Z. Zhang, Y. Zhao,
+                                and R. J. Harrison
+                        "NWChem: Past, present, and future
+                         J. Chem. Phys. 152, 184102 (2020)
+                               doi:10.1063/5.0004997
+
+                                      AUTHORS
+                                      -------
+  E. Apra, E. J. Bylaska, N. Govind, K. Kowalski, M. Valiev, D. Mejia-Rodriguez,
+       A. Kunitsa, N. P. Bauman, A. Panyala, W. A. de Jong, T. P. Straatsma,
+   H. J. J. van Dam, D. Wang, T. L. Windus, J. Hammond, J. Autschbach, A. Woods,
+    K. Bhaskaran-Nair, J. Brabec, K. Lopata, S. A. Fischer, S. Krishnamoorthy,
+     M. Jacquelin, W. Ma, M. Klemm, O. Villa, Y. Chen, V. Anisimov, F. Aquino,
+     S. Hirata, M. T. Hackler, E. Hermes, L. Jensen, J. E. Moore, J. C. Becca,
+      V. Konjkov, T. Risthaus, M. Malagoli, A. Marenich, A. Otero-de-la-Roza,
+        J. Mullin, P. Nichols, R. Peverati, J. Pittner, Y. Zhao, P.-D. Fan,
+        A. Fonari, M. J. Williamson, R. J. Harrison, J. R. Rehr, M. Dupuis,
+     D. Silverstein, D. M. A. Smith, J. Nieplocha, V. Tipparaju, M. Krishnan,
+     B. E. Van Kuiken, A. Vazquez-Mayagoitia, M. Swart, Q. Wu, T. Van Voorhis,
+     A. A. Auer, M. Nooijen, L. D. Crosby, E. Brown, G. Cisneros, G. I. Fann,
+   H. Fruchtl, J. Garza, K. Hirao, R. A. Kendall, J. A. Nichols, K. Tsemekhman,
+    K. Wolinski, J. Anchell, D. E. Bernholdt, P. Borowski, T. Clark, D. Clerc,
+   H. Dachsel, M. J. O. Deegan, K. Dyall, D. Elwood, E. Glendening, M. Gutowski,
+   A. C. Hess, J. Jaffe, B. G. Johnson, J. Ju, R. Kobayashi, R. Kutteh, Z. Lin,
+   R. Littlefield, X. Long, B. Meng, T. Nakajima, S. Niu, L. Pollack, M. Rosing,
+   K. Glaesemann, G. Sandrone, M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe,
+                               A. T. Wong, Z. Zhang.
+
+ Total times  cpu:    19053.2s     wall:    19053.2s
